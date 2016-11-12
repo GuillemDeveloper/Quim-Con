@@ -124,7 +124,6 @@
     <instance objName="obj_collider" x="15" y="80" name="inst_2B3DB6F2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="15" y="48" name="inst_6261C10D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="15" y="16" name="inst_740EF9BA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="46" y="16" name="inst_8A192730" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="78" y="16" name="inst_2E9FDFDB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="110" y="16" name="inst_5D92E544" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="142" y="16" name="inst_A31B477E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -141,6 +140,7 @@
     <instance objName="obj_collider" x="593" y="18" name="inst_0BD5458E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Sal_Ruta_2" x="227" y="449" name="inst_8C984D42" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="465" y="18" name="inst_8AE21716" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_pause" x="32" y="96" name="inst_4D1875AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="32" w="32" h="32" xo="192" yo="64" id="10003523" name="inst_85494C60" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -25,11 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///End game when click on it
-//game_end(); //Finalitza el joc
-//show_message("Proximamente!");
+            <string>///Abrir pantalla de opciones
 
-room_goto(rm_options);
+room_goto(rm_menu_options);
 </string>
           </argument>
         </arguments>

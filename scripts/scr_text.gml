@@ -11,6 +11,7 @@ with (text) {
     text = argument0;
     spd = argument1;
     font = fnt;
+    alpha = 0.5;
     
     text_length = string_length(text); //retorna el nº de caracters del text
     font_size = font_get_size(font); // retorna el tamany de la font, en pixels
