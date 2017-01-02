@@ -12,11 +12,25 @@
       <sprite>sprites\sprit_hero_left</sprite>
       <sprite>sprites\sprit_hero_right</sprite>
     </sprites>
-    <sprites name="NPC 1">
-      <sprite>sprites\npc1_down</sprite>
-      <sprite>sprites\npc1_up</sprite>
-      <sprite>sprites\npc1_left</sprite>
-      <sprite>sprites\npc1_right</sprite>
+    <sprites name="Animals">
+      <sprite>sprites\spr_cat_down</sprite>
+      <sprite>sprites\spr_cat_left</sprite>
+      <sprite>sprites\spr_cat_right</sprite>
+      <sprite>sprites\spr_cat_up</sprite>
+    </sprites>
+    <sprites name="NPCS">
+      <sprites name="npc1">
+        <sprite>sprites\npc1_down</sprite>
+        <sprite>sprites\npc1_up</sprite>
+        <sprite>sprites\npc1_left</sprite>
+        <sprite>sprites\npc1_right</sprite>
+      </sprites>
+      <sprites name="npc2">
+        <sprite>sprites\npc2_down</sprite>
+        <sprite>sprites\npc2_left</sprite>
+        <sprite>sprites\npc2_right</sprite>
+        <sprite>sprites\npc2_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="Collider">
       <sprite>sprites\collider</sprite>
@@ -39,6 +53,7 @@
         <sprite>sprites\spr_Window_BR</sprite>
         <sprite>sprites\spr_Window_MR</sprite>
         <sprite>sprites\spr_Window_Base</sprite>
+        <sprite>sprites\spr_Win_BaseINV</sprite>
       </sprites>
       <sprite>sprites\spr_button</sprite>
       <sprite>sprites\spr_button_salir</sprite>
@@ -51,12 +66,6 @@
         <sprite>sprites\spr_Salir</sprite>
       </sprites>
       <sprite>sprites\spr_text_background</sprite>
-    </sprites>
-    <sprites name="Animals">
-      <sprite>sprites\spr_cat_down</sprite>
-      <sprite>sprites\spr_cat_left</sprite>
-      <sprite>sprites\spr_cat_right</sprite>
-      <sprite>sprites\spr_cat_up</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -85,6 +94,7 @@
     <background>background\background16</background>
     <backgrounds name="Wallpapers">
       <background>background\background17</background>
+      <background>background\water</background>
     </backgrounds>
     <backgrounds name="System">
       <backgrounds name="Options">
@@ -94,10 +104,13 @@
     <backgrounds name="Animals">
       <background>background\background19</background>
     </backgrounds>
+    <background>background\intro</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
+    <script>scripts\dialogue_create_script.gml</script>
+    <script>scripts\dialogue_step.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
@@ -106,6 +119,7 @@
     <objects name="characters">
       <object>objects\obj_hero</object>
       <object>objects\obj_npc1</object>
+      <object>objects\obj_npc2</object>
     </objects>
     <objects name="Animals">
       <object>objects\obj_cat</object>
@@ -143,7 +157,6 @@
           </objects>
         </objects>
         <object>objects\obj_entrada_inside_house</object>
-        <object>objects\door</object>
       </objects>
     </objects>
     <objects name="System">
@@ -159,8 +172,11 @@
           <object>objects\obj_Window_Exit</object>
         </objects>
         <objects name="Buttons_Menu">
-          <object>objects\obj_Menu_Opciones</object>
+          <object>objects\ob_Menu_Continuar</object>
+          <object>objects\obj_Menu_Estado</object>
+          <object>objects\obj_Menu_Items</object>
           <object>objects\obj_Menu_Save</object>
+          <object>objects\obj_Menu_Opciones</object>
           <object>objects\obj_Menu_Exit</object>
         </objects>
       </objects>
@@ -170,18 +186,23 @@
         <object>objects\obj_Window_Main_Menu</object>
         <object>objects\obj_Window_Ingame_Menu</object>
       </objects>
+      <object>objects\obj_new_text</object>
       <object>objects\obj_menu_pause</object>
     </objects>
+    <object>objects\obj_dialog1</object>
+    <object>objects\obj_dialog2</object>
+    <object>objects\obj_intro_dialog</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\Town</room>
+    <room>rooms\Introduccion</room>
     <room>rooms\rm_menu</room>
-    <room>rooms\Prueba_pantalla_texto</room>
+    <room>rooms\rm_ingame_menu</room>
     <rooms name="Rutas">
       <room>rooms\Ruta1</room>
       <room>rooms\Ruta_2</room>
     </rooms>
     <rooms name="HelioTown">
-      <room>rooms\Town</room>
       <rooms name="Houses">
         <room>rooms\inside_house</room>
         <room>rooms\house2</room>
@@ -198,7 +219,7 @@
       <room>rooms\rm_menu_options</room>
       <rooms name="Tests">
         <room>rooms\prueba_de_conversaciones</room>
-        <room>rooms\rm_ingame_menu</room>
+        <room>rooms\Prueba_pantalla_texto</room>
       </rooms>
     </rooms>
   </rooms>

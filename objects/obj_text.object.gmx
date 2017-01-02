@@ -138,7 +138,6 @@ draw_text_ext (
     font_size + (font_size/2),
     maxlength
 );
-
 draw_set_alpha(1);
 
 

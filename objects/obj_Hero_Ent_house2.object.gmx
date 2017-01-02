@@ -49,7 +49,8 @@
           <argument>
             <kind>1</kind>
             <string>room_goto(house2);
-
+obj_hero.x=256;
+obj_hero.y=416;
 </string>
           </argument>
         </arguments>

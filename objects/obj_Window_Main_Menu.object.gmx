@@ -69,7 +69,7 @@ draw_sprite(spr_Window_BR,0,x+sprite_width,y+sprite_height);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(292, 384, "Main Menu",2.15,2.15,0);
+draw_text_transformed(160, 384, "Main Menu",2.15,2.15,0);
 
 
 

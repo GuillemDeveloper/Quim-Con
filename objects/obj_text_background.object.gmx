@@ -68,7 +68,7 @@ draw_sprite(spr_Window_BR,0,x+sprite_width,y+sprite_height);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text_ext(x+8,y+8,"La herramienta para clonar"+
+            <string>var textProva=("La herramienta para clonar"+
 +" usa la brocha actual para pintar, copiando desde una imagen o patrón."+
 +" Tiene muchos usos, uno de los más importantes es el de reparar problemas "+
 +"en áreas de una fotografía digital pintando sobre ellos los píxeles"+
@@ -84,8 +84,16 @@ draw_sprite(spr_Window_BR,0,x+sprite_width,y+sprite_height);
 +" ejes, salta al eje opuesto y continúa como si el patrón estuviera repetido "+
 +"infinitamente en cada lado. Cuando clone desde una imagen esto no sucede: al"+
 +" salirse de los ejes de la imagen origen la herramienta deja de +"+
-+"producir cambios.",14,room_width - 100);
++"producir cambios.");
 
+draw_text_ext(x+8,y+8,textProva,14,room_width - 100);
+//draw_text_ext_colour(x+8,y+8,textProva, 14, room_width -100, c_white,c_white,c_white,c_white,1);
+/*
+if (keyboard_check(ord("Z"))){
+draw_set_alpha(0);
+text2="sdfghjklñliuytrewqam,.ñpo765reszx kiuytresxc vbnuytrdx";
+draw_text_ext(x+8,y+8,text2,14,room_width - 100);
+}*/
 </string>
           </argument>
         </arguments>

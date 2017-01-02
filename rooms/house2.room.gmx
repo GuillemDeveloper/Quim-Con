@@ -211,7 +211,6 @@
     <instance objName="obj_collider" x="592" y="176" name="inst_DA847CEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="48" y="400" name="inst_79A2FFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_npc1" x="174" y="142" name="inst_C073B969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_Hero_Start" x="257" y="411" name="inst_6717CC02" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero_Sal_house2" x="224" y="448" name="inst_39E727FC" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="401" y="80" name="inst_DDB14F24" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="432" y="79" name="inst_AB72C73C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -236,7 +235,7 @@
     <instance objName="obj_collider" x="49" y="112" name="inst_D0FD435C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="80" y="111" name="inst_162166A0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="128" y="96" name="inst_20040E84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cat" x="368" y="109" name="inst_5DD32E3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cat" x="416" y="160" name="inst_5DD32E3F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="256" y="320" w="32" h="32" xo="96" yo="448" id="10001533" name="inst_59D48610" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

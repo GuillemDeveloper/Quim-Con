@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Create event pause
-global.pause=0;
+global.pause=false;
+global.positX=0;
+global.positY=0;
+global.count=0;
 </string>
           </argument>
         </arguments>
@@ -53,6 +56,7 @@ global.pause=0;
 
 if (global.pause){
 
+
     draw_set_color(c_black);
     draw_set_alpha(0.5);
     draw_rectangle(0,0,room_width, room_height, 0);
@@ -62,9 +66,9 @@ if (global.pause){
     draw_set_alpha(1);
     draw_text(room_width/2, room_height/2,"Game Paused!");
    draw_set_colour(c_black);
-    
+
     //instance_create (224, 320, obj_Menu_Save); Pendent de millora
-    instance_create(224,380,obj_Menu_Exit);
+   // instance_create(224,380,obj_Menu_Exit);
     //draw_text_transformed(300, 420, "Exit",2.5,2.5,image_angle);
     
 
@@ -95,18 +99,40 @@ if (global.pause){
 
 
 
-    if(global.pause == 0)
+    if(global.pause == false)
     {
-     //instance_create(x,y,obj_menu_pause);
-        global.pause = 1;
+        
+        global.pause = true;
+        global.RoomBeforePause = room;
+       
+      //Guardar posició personatge 
+       /* ini_open( 'savedata.ini' );
+        ini_write_real( 'save1', 'Player X position', obj_hero.x );
+        ini_write_real( 'save1', 'Player Y position', obj_hero.y );
+        ini_close();*/
+        
+         //global.indexHero=object_get_sprite(obj_hero);
+        
+        object_set_persistent(obj_hero, false);
+       // object_set_persistent(obj_npc1,false);
+        screen_save("fondo.png");
+        bck=background_add("fondo.png",true,true);
+        room_set_background(rm_ingame_menu,1,1,0,bck,0,0,1,1,0,0,0.8);
+        //instance_deactivate_all(true);
         
        
-    } else
-    {
-        global.pause = 0;
-        room_goto_previous();
+        // show_message("Index: "+ string(global.indexHero));
+        global.count=1;
+        room_goto(rm_ingame_menu);
+        
        
+    } 
+    else if(global.pause == true)
+    {
+        global.pause = false;
+        room_goto(RoomBeforePause);
     }
+
 </string>
           </argument>
         </arguments>
