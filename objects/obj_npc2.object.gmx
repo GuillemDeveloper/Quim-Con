@@ -31,6 +31,7 @@ image_speed=0;//Velocitat a la que el programa mou el sprite del personatge
 _direction = "down";
 alarm[0]= room_speed * 1.5;
 
+global.hablandonpc2 = false;
 drawText=false;
 t=0;
 line=0;
@@ -137,7 +138,31 @@ if (place_meeting(x,y,obj_hero)){
   
     physics_set_density(0, 0);
     image_speed=0;
-}/* else
+}
+
+/*
+if(global.hablandonpc2 == true){
+ switch(global.heroDirection){
+        case 0:
+        sprite_index = npc2_left;
+        break;
+        
+        case 90:
+        sprite_index = npc2_down;
+        break;
+        
+        case 180:
+        sprite_index = npc2_right;
+        break;
+        
+        case 270:
+        sprite_index = npc2_up;
+        break;
+        }
+        }
+*/
+
+/* else
 {
     image_speed = 0.1;
     if (_direction == "up")
@@ -323,10 +348,13 @@ if(drawText==true){
     draw_set_color(c_white);
     //draw_rectangle(0,view_hview-128,view_wview,view_hview,false);
      draw_rectangle(0,400,640,480,false);
+   //  draw_set_color(c_white);
+   //  draw_rectangle(0,340,640,396,false);
     draw_set_color(c_black);
     
    // draw_text(32,view_hview-96,string_copy(text[line],1,t));
      draw_text(40,420,string_copy(text[line],1,t));
+    // draw_text(40,360,"Claro que si");
     if(t&lt;=string_length(text[line])){
         t++;
     }
@@ -368,15 +396,36 @@ if(distance_to_object(obj_hero)&lt;16){
 ///////////////Nuevo Método de dialogo/////////////////////
 
 if(distance_to_object(obj_hero)&lt;16){ //Comprobar si heroe está cerca
-    var xx=obj_hero.x+16*cos(degtorad(obj_hero.image_angle));
-    var yy=obj_hero.y-16*sin(degtorad(obj_hero.image_angle));
-    if(collision_line(obj_hero.x, obj_hero.y, xx, yy, id, false, false)){
+   // var xx=obj_hero.x+16*cos(degtorad(obj_hero.image_angle));
+   // var yy=obj_hero.y-16*sin(degtorad(obj_hero.image_angle));
+   // if(collision_line(obj_hero.x, obj_hero.y, xx, yy, id, false, false)){
+     if(collision_line(obj_npc2.x,obj_npc2.y,obj_hero.x, obj_hero.y, id, false, false)){
+
+       
+           
     //Empezar a hablar
     if(drawText==false){
         drawText=true;
+        global.hablandonpc2 =true;
+       
+         if(object_get_sprite(obj_hero)==sprit_hero_right){
+            sprite_index = npc2_left;
+        }
+       /* else if(object_get_sprite(obj_hero)==sprit_hero_up){
+            sprite_index = npc2_down;
+            }  
+            /*else  if(object_get_sprite(obj_hero)==sprit_hero_left){
+            sprite_index = npc2_right;
+            } else  if(object_get_sprite(obj_hero)==sprit_hero_down){
+            sprite_index = npc2_up;
+            } */
         //obj_hero.free=false;
         t=0;
         line=0;
+        /*if((keyboard_check(vk_left)) || (keyboard_check(vk_right)) || (keyboard_check(vk_up)) || (keyboard_check(vk_down)) || (keyboard_check(vk_escape))){
+            
+        }*/
+        global.hablando=true;
         //nueva linea de texto
     } else if(line&lt;totalLines-1){
         t=0;
@@ -384,6 +433,9 @@ if(distance_to_object(obj_hero)&lt;16){ //Comprobar si heroe está cerca
         //end talking
     } else{
         drawText=false;
+        global.hablando=false;
+        global.hablandonpc2 = false;
+        //scr_itempickup(1);
         //obj_hero.free=true;
     }
  }

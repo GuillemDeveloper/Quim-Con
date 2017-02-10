@@ -30,6 +30,8 @@ global.pause=false;
 global.positX=0;
 global.positY=0;
 global.count=0;
+
+
 </string>
           </argument>
         </arguments>
@@ -61,7 +63,7 @@ if (global.pause){
     draw_set_alpha(0.5);
     draw_rectangle(0,0,room_width, room_height, 0);
     draw_set_halign(fa_center);
-    draw_set_font(fnt);
+    draw_set_font(font_menu);
     draw_set_colour(c_black);
     draw_set_alpha(1);
     draw_text(room_width/2, room_height/2,"Game Paused!");
@@ -97,7 +99,9 @@ if (global.pause){
             <kind>1</kind>
             <string>///Press escape to pause the game
 
-
+if(global.hablando==true){
+exit;
+}
 
     if(global.pause == false)
     {
@@ -114,16 +118,16 @@ if (global.pause){
          //global.indexHero=object_get_sprite(obj_hero);
         
         object_set_persistent(obj_hero, false);
-       // object_set_persistent(obj_npc1,false);
+        //object_set_persistent(obj_npc1,false);
         screen_save("fondo.png");
         bck=background_add("fondo.png",true,true);
-        room_set_background(rm_ingame_menu,1,1,0,bck,0,0,1,1,0,0,0.8);
+        room_set_background(room_ingame_menu,1,1,0,bck,0,0,1,1,0,0,0.8);
         //instance_deactivate_all(true);
         
        
         // show_message("Index: "+ string(global.indexHero));
         global.count=1;
-        room_goto(rm_ingame_menu);
+        room_goto(room_ingame_menu);
         
        
     } 

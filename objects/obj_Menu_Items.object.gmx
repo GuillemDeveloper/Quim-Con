@@ -27,9 +27,9 @@
             <kind>1</kind>
             <string>///Abrir pantalla de Items
 
-//room_goto(rm_menu_options);
+room_goto(rm_Items);
 
-show_message("Proximamente");
+//show_message("Proximamente");
 </string>
           </argument>
         </arguments>

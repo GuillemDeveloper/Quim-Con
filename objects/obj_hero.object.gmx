@@ -3,8 +3,8 @@
   <spriteName>sprit_hero_down</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>1000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -35,6 +35,8 @@ image_speed=0.1;
 else{*/
 image_speed=0; //Velocitat a la que el programa mou el sprite del personatge
 global.name="Hero";
+global.hablando=false;
+global.heroDirection = direction;
 </string>
           </argument>
         </arguments>
@@ -84,10 +86,13 @@ global.name="Hero";
             <kind>1</kind>
             <string>///Handle Input Logic
 
-if ((room == rm_ingame_menu)|| (room == rm_menu_options))
+if ((room == room_ingame_menu)|| (room == rm_menu_options))
 {
     sprite_index = -1;
     exit; 
+}
+if(global.hablando==true){
+    exit;
 }
 
 

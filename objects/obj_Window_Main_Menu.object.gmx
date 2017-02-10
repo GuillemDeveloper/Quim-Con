@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>///Return to menu
-room_goto(rm_menu);
+room_goto(room_Menu);
 </string>
           </argument>
         </arguments>
@@ -69,7 +69,8 @@ draw_sprite(spr_Window_BR,0,x+sprite_width,y+sprite_height);
 
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(160, 384, "Main Menu",2.15,2.15,0);
+draw_set_font(fnt);
+draw_text_transformed(160, 384, "Main Menu",1.5,1.5,0);
 
 
 

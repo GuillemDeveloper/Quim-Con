@@ -36,6 +36,9 @@
     with(obj_hero){
         sprite_index = global.indsprite;
     }
+    /*with (obj_npc1){
+        sprite_index = global.sprnpc1;
+    }*/
 
 /*
 ini_open('savedata.ini');

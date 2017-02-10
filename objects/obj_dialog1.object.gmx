@@ -34,8 +34,8 @@ Dialogue_Number = 0;
 //Dialogue_Test
 dialogue[1]  = "Hola, tu eres "+global.name+", verdad?";
 dialogue[2]  = "Mucho gusto de conocerte.";
-dialogue[3]  = "Este mundo ha sufrido problemas debido al mago de los tiempos.\n Tienes que ayudarnos.";
-dialogue[4]  = "Tu misión es recuperar las esferas de elementos repartidos por todo el mundo. Eres nuestra última esperanza...";
+dialogue[3]  = "Este mundo ha sufrido problemas debido al mago de los tiempos.# Tienes que ayudarnos.";
+dialogue[4]  = "Tu misión es recuperar las esferas# de elementos repartidos por todo# el mundo. Eres nuestra última esperanza...";
 
 </string>
           </argument>

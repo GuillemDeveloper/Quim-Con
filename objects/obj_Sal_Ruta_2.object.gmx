@@ -48,9 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Town);
-obj_hero.x = 320;
-obj_hero.y = 416;
+            <string>room_goto(Ruta1);
+obj_hero.x = 512;
+obj_hero.y = 0;
 
 
 </string>

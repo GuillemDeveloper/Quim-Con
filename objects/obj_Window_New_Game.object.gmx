@@ -98,8 +98,8 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>///Continue the game/New Game
-room_goto(Town);
-object_set_persistent(obj_hero, true);
+room_goto(Introduccion);
+
 </string>
           </argument>
         </arguments>
@@ -126,6 +126,8 @@ object_set_persistent(obj_hero, true);
 
 //Aquest codi lo que fa es dibuixar una finestra en la que es posarà els textos que surtin
 draw_sprite_stretched(spr_Win_BaseINV,image_index,x+6,y+6,sprite_width+4,sprite_height+4);
+//draw_sprite_stretched(spr_Win_BaseINV,image_index,x,y,sprite_width,sprite_height);
+
 
 //Dibuixar costats de la finestra
 draw_sprite_stretched(spr_Window_T,0,x+4,y,sprite_width,16);

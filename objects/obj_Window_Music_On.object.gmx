@@ -68,9 +68,10 @@ draw_sprite(spr_Window_TR,0,x+ sprite_width,y);
 draw_sprite(spr_Window_BL,0,x,y+sprite_height);
 draw_sprite(spr_Window_BR,0,x+sprite_width,y+sprite_height);
 
+draw_set_font(font_menu);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text_transformed(388, 132, "On",1.75,1.75,0);
+draw_text_transformed(388, 132, "On",1.25,1.25,0);
 
 
 

@@ -219,6 +219,7 @@
     <instance objName="obj_npc1" x="433" y="142" name="inst_C073B969" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero_Salida" x="224" y="448" name="inst_1198A540" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="32" y="96" name="inst_F37EA731" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_hero" x="128" y="288" name="inst_B2725B11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="256" y="320" w="32" h="32" xo="96" yo="448" id="10001533" name="inst_59D48610" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

@@ -13,10 +13,12 @@
       <sprite>sprites\sprit_hero_right</sprite>
     </sprites>
     <sprites name="Animals">
-      <sprite>sprites\spr_cat_down</sprite>
-      <sprite>sprites\spr_cat_left</sprite>
-      <sprite>sprites\spr_cat_right</sprite>
-      <sprite>sprites\spr_cat_up</sprite>
+      <sprites name="Cat">
+        <sprite>sprites\spr_cat_down</sprite>
+        <sprite>sprites\spr_cat_left</sprite>
+        <sprite>sprites\spr_cat_right</sprite>
+        <sprite>sprites\spr_cat_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="NPCS">
       <sprites name="npc1">
@@ -31,6 +33,12 @@
         <sprite>sprites\npc2_right</sprite>
         <sprite>sprites\npc2_up</sprite>
       </sprites>
+      <sprites name="npc3">
+        <sprite>sprites\npc3_down</sprite>
+        <sprite>sprites\npc3_left</sprite>
+        <sprite>sprites\npc3_right</sprite>
+        <sprite>sprites\npc3_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="Collider">
       <sprite>sprites\collider</sprite>
@@ -43,6 +51,18 @@
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_menu_bar</sprite>
     <sprites name="System">
+      <sprites name="ButtonEntrarSalir">
+        <sprite>sprites\spr_button_salir</sprite>
+        <sprite>sprites\spr_button</sprite>
+      </sprites>
+      <sprites name="Menu">
+        <sprite>sprites\spr_continuar</sprite>
+        <sprite>sprites\spr_Estado</sprite>
+        <sprite>sprites\spr_Items</sprite>
+        <sprite>sprites\spr_Guardar</sprite>
+        <sprite>sprites\spr_Opciones</sprite>
+        <sprite>sprites\spr_Salir</sprite>
+      </sprites>
       <sprites name="Windows">
         <sprite>sprites\spr_Window_TL</sprite>
         <sprite>sprites\spr_Window_T</sprite>
@@ -54,19 +74,21 @@
         <sprite>sprites\spr_Window_MR</sprite>
         <sprite>sprites\spr_Window_Base</sprite>
         <sprite>sprites\spr_Win_BaseINV</sprite>
-      </sprites>
-      <sprite>sprites\spr_button</sprite>
-      <sprite>sprites\spr_button_salir</sprite>
-      <sprites name="Menu">
-        <sprite>sprites\spr_continuar</sprite>
-        <sprite>sprites\spr_Estado</sprite>
-        <sprite>sprites\spr_Items</sprite>
-        <sprite>sprites\spr_Guardar</sprite>
-        <sprite>sprites\spr_Opciones</sprite>
-        <sprite>sprites\spr_Salir</sprite>
+        <sprite>sprites\spr_win_BaseINV2</sprite>
       </sprites>
       <sprite>sprites\spr_text_background</sprite>
+      <sprite>sprites\spr_arrow</sprite>
     </sprites>
+    <sprites name="background animated">
+      <sprite>sprites\flower</sprite>
+      <sprite>sprites\spr_water</sprite>
+    </sprites>
+    <sprites name="items">
+      <sprite>sprites\spr_border</sprite>
+      <sprite>sprites\spr_item</sprite>
+    </sprites>
+    <sprite>sprites\spr_logo</sprite>
+    <sprite>sprites\spr_press_start</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -79,57 +101,92 @@
       <background>background\lights</background>
       <background>background\chairs</background>
       <background>background\desk</background>
-      <background>background\background11</background>
+      <background>background\metals</background>
       <background>background\carpet</background>
       <background>background\pianos_and_clocks</background>
+      <background>background\Stairs</background>
+      <background>background\barandillas</background>
     </backgrounds>
     <backgrounds name="Kitchen">
       <background>background\kitchen</background>
     </backgrounds>
     <backgrounds name="outdoor">
       <background>background\blueTown</background>
+      <background>background\castle_out</background>
+      <background>background\city3</background>
+      <background>background\multiple___tejados</background>
+      <background>background\plants</background>
       <background>background\Signs</background>
+      <background>background\water_background</background>
     </backgrounds>
-    <background>background\plants</background>
-    <background>background\background16</background>
     <backgrounds name="Wallpapers">
       <background>background\background17</background>
       <background>background\water</background>
+      <background>background\wallpaper_intro</background>
     </backgrounds>
     <backgrounds name="System">
       <backgrounds name="Options">
         <background>background\musicOnOff</background>
       </backgrounds>
+      <background>background\TexturaNegra</background>
+      <background>background\intro</background>
     </backgrounds>
     <backgrounds name="Animals">
       <background>background\background19</background>
     </backgrounds>
-    <background>background\intro</background>
   </backgrounds>
-  <paths name="paths"/>
+  <paths name="paths">
+    <paths name="Helio Town">
+      <path>paths\path_npc1_Town</path>
+    </paths>
+    <paths name="Xenon City">
+      <path>paths\path_npc3_Xenon</path>
+    </paths>
+    <paths name="Rutas">
+      <paths name="Ruta 1">
+        <path>paths\path_Cat_move</path>
+      </paths>
+    </paths>
+  </paths>
   <scripts name="scripts">
     <script>scripts\scr_text.gml</script>
     <script>scripts\dialogue_create_script.gml</script>
     <script>scripts\dialogue_step.gml</script>
+    <scripts name="items">
+      <script>scripts\scr_itempickup.gml</script>
+      <script>scripts\scr_itemdrop.gml</script>
+      <script>scripts\scr_itemcheck.gml</script>
+      <script>scripts\scr_itemtext.gml</script>
+    </scripts>
+    <scripts name="Menu">
+      <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_ingame_menu.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt</font>
+    <font>fonts\font_menu</font>
   </fonts>
   <objects name="objects">
+    <objects name="Animals">
+      <object>objects\obj_cat</object>
+      <object>objects\catMove</object>
+    </objects>
     <objects name="characters">
       <object>objects\obj_hero</object>
       <object>objects\obj_npc1</object>
+      <object>objects\obj_npc1_new</object>
       <object>objects\obj_npc2</object>
-    </objects>
-    <objects name="Animals">
-      <object>objects\obj_cat</object>
+      <object>objects\obj_npc3</object>
     </objects>
     <objects name="Collider">
       <object>objects\obj_collider</object>
     </objects>
-    <objects name="Text objects">
-      <object>objects\obj_text</object>
-      <object>objects\obj_spawner</object>
+    <objects name="Dialogs">
+      <object>objects\obj_dialog1</object>
+      <object>objects\obj_dialog2</object>
+      <object>objects\obj_intro_dialog</object>
+      <object>objects\obj_intro_text</object>
     </objects>
     <objects name="Entradas/Salidas">
       <object>objects\obj_Hero_Start</object>
@@ -145,6 +202,10 @@
               <object>objects\obj_Hero_Sal_house2</object>
             </objects>
           </objects>
+          <objects name="Xenon City">
+            <object>objects\obj_Ent_Xenon</object>
+            <object>objects\obj_Sal_Xenon</object>
+          </objects>
         </objects>
         <objects name="Rutas">
           <objects name="Ruta1">
@@ -159,6 +220,15 @@
         <object>objects\obj_entrada_inside_house</object>
       </objects>
     </objects>
+    <objects name="Environment">
+      <object>objects\obj_flower</object>
+      <object>objects\obj_water</object>
+    </objects>
+    <objects name="Inventory">
+      <object>objects\obj_inventory</object>
+      <object>objects\obj_draw_inv</object>
+    </objects>
+    <object>objects\obj_cartel</object>
     <objects name="System">
       <object>objects\obj_GameState</object>
       <object>objects\obj_pause</object>
@@ -189,36 +259,49 @@
       <object>objects\obj_new_text</object>
       <object>objects\obj_menu_pause</object>
     </objects>
-    <object>objects\obj_dialog1</object>
-    <object>objects\obj_dialog2</object>
-    <object>objects\obj_intro_dialog</object>
+    <objects name="Text objects">
+      <object>objects\obj_text</object>
+      <object>objects\obj_spawner</object>
+    </objects>
+    <object>objects\obj_logo</object>
+    <object>objects\obj_press_start</object>
+    <object>objects\obj_Preguntas_opciones</object>
+    <objects name="Menu">
+      <object>objects\object_menu</object>
+      <object>objects\object_ingame_menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\Town</room>
-    <room>rooms\Introduccion</room>
-    <room>rooms\rm_menu</room>
-    <room>rooms\rm_ingame_menu</room>
+    <room>rooms\room_Menu</room>
+    <rooms name="Menu">
+      <room>rooms\Introduccion</room>
+      <room>rooms\room_ingame_menu</room>
+      <room>rooms\rm_Items</room>
+    </rooms>
     <rooms name="Rutas">
-      <room>rooms\Ruta1</room>
       <room>rooms\Ruta_2</room>
+      <room>rooms\Ruta1</room>
     </rooms>
     <rooms name="HelioTown">
       <rooms name="Houses">
         <room>rooms\inside_house</room>
         <room>rooms\house2</room>
       </rooms>
+      <room>rooms\Town</room>
     </rooms>
     <rooms name="Xenon_City">
-      <room>rooms\Xenon_City</room>
       <rooms name="Houses">
         <room>rooms\House_Lab</room>
       </rooms>
+      <room>rooms\Xenon_City</room>
     </rooms>
     <rooms name="System">
       <room>rooms\rm_options</room>
       <room>rooms\rm_menu_options</room>
       <rooms name="Tests">
         <room>rooms\prueba_de_conversaciones</room>
+        <room>rooms\rm_menu</room>
+        <room>rooms\rm_ingame_menu</room>
         <room>rooms\Prueba_pantalla_texto</room>
       </rooms>
     </rooms>

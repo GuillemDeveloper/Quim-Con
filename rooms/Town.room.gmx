@@ -124,7 +124,7 @@ scr_text("HelioTown", 30, 0, 0);</code>
     <instance objName="obj_collider" x="112" y="398" name="inst_0079B585" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="80" y="398" name="inst_3548B5B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="48" y="398" name="inst_2368DC80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="368" y="210" name="inst_74EAD479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="369" y="195" name="inst_74EAD479" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="368" y="178" name="inst_9737E1B7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="240" y="270" name="inst_9FDB743D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="208" y="270" name="inst_D340462A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -205,12 +205,14 @@ scr_text("HelioTown", 30, 0, 0);</code>
     <instance objName="obj_Hero_Entrada" x="257" y="178" name="inst_C774FE01" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero_Ent_house2" x="503" y="187" name="inst_1FE45320" locked="0" code="" scaleX="1" scaleY="0.200000002980232" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ent_Ruta1" x="97" y="0" name="inst_6A84B4CE" locked="0" code="" scaleX="3" scaleY="0.400000005960464" colour="4294967295" rotation="0"/>
-    <instance objName="obj_hero" x="384" y="288" name="inst_D3DB4D53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_npc1" x="288" y="256" name="inst_B98AA7AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="32" y="32" name="inst_7D71A254" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="433" name="inst_11FCCAEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_npc2" x="464" y="335" name="inst_67C0A3CF" locked="0" code="text[0]=&quot;Bienvenido a HelioTown&quot;;&#xA;text[1]=&quot;Que pases un buen dia.&quot;;&#xA;totalLines=2;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_dialog2" x="361" y="205" name="inst_1D201DCB" locked="0" code="/*&#xA;//write your messages in an array, starting at 0, like so&#xA;message[0] = &quot;Hello there! Welcome to the # world of Pokemon!&quot;;&#xA;message[1] = &quot;My name is Oak! People call# me the Pokemon Prof!&quot;;&#xA;message[2] = &quot;This world is inhabited by # creatures called Pokemon!&quot;;&#xA;message[3] = &quot;For some people, # Pokemon are pets.&quot;;&#xA;message[4] = &quot;Others use them for fights.&quot;;&#xA;message[5] = &quot;Myself...&quot;;&#xA;message[6] = &quot;I study Pokemon as # a profession.&quot;;&#xA;&#xA;message_current = 0; //0 is the first number in our array, and the message we are currently at&#xA;message_end = 6; //6 is the last number in our array&#xA;message_draw = &quot;&quot;; //this is what we 'write' out. It's blank right now&#xA;increase = 0.5; //the speed at which new characters are added&#xA;characters = 0; //how many characters have already been drawn&#xA;hold = 0; //if we hold 'Z', the text will render faster&#xA;&#xA;message_length = string_length(message[message_current]); //get the number&#xA;*/&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_npc2" x="464" y="335" name="inst_67C0A3CF" locked="0" code="text[0]=&quot;Bienvenido a HelioTown&quot;;&#xA;text[1]=&quot;Que pases un buen dia &quot;+global.name;&#xA;//text[2]=&quot;Has obtenido el orbe del sulfuro &quot;;&#xA;totalLines=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="304" y="463" name="inst_E177E242" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="336" y="463" name="inst_B8A30806" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="369" y="464" name="inst_8227756E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="400" y="464" name="inst_6DC9B5D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_npc1_new" x="290" y="253" name="inst_0A03A6B4" locked="0" code="text[0]=&quot;Bienvenido a HelioTown&quot;;&#xA;text[1]=&quot;Que pases un buen dia &quot;+global.name;&#xA;totalLines=2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="0" w="32" h="32" xo="192" yo="64" id="10002095" name="inst_EBC0ACDB" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
