@@ -14,16 +14,17 @@ switch(mpos)
         break;
         
     case 1: //Estado
-        show_message("Proximamente!!!");
+        room_goto(rm_Status);
         break;
     
     case 2: //Items
-        //room_goto(rm_Items);
-        show_message("Proximamente!!!");
+        room_goto(rm_Items);
+        //show_message("Proximamente!!!");
         break;
         
     case 3: //Save
-        show_message("Proximamente!!!");
+        scr_savegame();
+        show_message(global.positX);
         break;
         
     case 4: //Options

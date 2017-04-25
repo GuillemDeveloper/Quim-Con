@@ -86,9 +86,25 @@
     <sprites name="items">
       <sprite>sprites\spr_border</sprite>
       <sprite>sprites\spr_item</sprite>
+      <sprite>sprites\spr_chest</sprite>
+      <sprite>sprites\spr_chest_open</sprite>
+      <sprites name="Orbs">
+        <sprite>sprites\spr_orb_chlorine</sprite>
+        <sprite>sprites\spr_orb_helium</sprite>
+        <sprite>sprites\spr_orb_hydrogen</sprite>
+        <sprite>sprites\spr_orb_iodine</sprite>
+        <sprite>sprites\spr_orb_neon</sprite>
+        <sprite>sprites\spr_orb_nitrogen</sprite>
+        <sprite>sprites\spr_orb_oxygen</sprite>
+        <sprite>sprites\spr_orb_phosphorus</sprite>
+      </sprites>
+      <sprite>sprites\spr_orbs</sprite>
     </sprites>
-    <sprite>sprites\spr_logo</sprite>
     <sprite>sprites\spr_press_start</sprite>
+    <sprites name="Choices">
+      <sprite>sprites\spr_ChoiceBox</sprite>
+      <sprite>sprites\spr_DialogueBox</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -134,6 +150,7 @@
     <backgrounds name="Animals">
       <background>background\background19</background>
     </backgrounds>
+    <background>background\bck_inventory</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Helio Town">
@@ -149,10 +166,9 @@
     </paths>
   </paths>
   <scripts name="scripts">
-    <script>scripts\scr_text.gml</script>
     <script>scripts\dialogue_create_script.gml</script>
     <script>scripts\dialogue_step.gml</script>
-    <scripts name="items">
+    <scripts name="Old System of items">
       <script>scripts\scr_itempickup.gml</script>
       <script>scripts\scr_itemdrop.gml</script>
       <script>scripts\scr_itemcheck.gml</script>
@@ -160,7 +176,24 @@
     </scripts>
     <scripts name="Menu">
       <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_configuration.gml</script>
       <script>scripts\scr_ingame_menu.gml</script>
+    </scripts>
+    <scripts name="Orbs">
+      <script>scripts\scr_Num_Orbs.gml</script>
+      <script>scripts\scr_Orbs_sentence.gml</script>
+      <script>scripts\scr_save_Orbs.gml</script>
+    </scripts>
+    <scripts name="Dialogs &amp; Choices">
+      <script>scripts\scrDialogue.gml</script>
+      <script>scripts\scrShowChoices.gml</script>
+    </scripts>
+    <scripts name="System">
+      <script>scripts\scr_text.gml</script>
+    </scripts>
+    <scripts name="Save &amp; Load">
+      <script>scripts\scr_savegame.gml</script>
+      <script>scripts\scr_loadgame.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -187,6 +220,11 @@
       <object>objects\obj_dialog2</object>
       <object>objects\obj_intro_dialog</object>
       <object>objects\obj_intro_text</object>
+      <objects name="Questions">
+        <object>objects\objChoiceBox</object>
+        <object>objects\objDialogueSystem</object>
+        <object>objects\objDialogueBox</object>
+      </objects>
     </objects>
     <objects name="Entradas/Salidas">
       <object>objects\obj_Hero_Start</object>
@@ -227,11 +265,24 @@
     <objects name="Inventory">
       <object>objects\obj_inventory</object>
       <object>objects\obj_draw_inv</object>
+      <object>objects\obj_chest</object>
+      <objects name="orbs">
+        <object>objects\obj_orb_chlorine</object>
+        <object>objects\obj_orb_helium</object>
+        <object>objects\obj_orb_hydrogen</object>
+        <object>objects\obj_orb_iodine</object>
+        <object>objects\obj_orb_neon</object>
+        <object>objects\obj_orb_nitrogen</object>
+        <object>objects\obj_orb_oxygen</object>
+        <object>objects\obj_orb_phosphorus</object>
+      </objects>
     </objects>
     <object>objects\obj_cartel</object>
     <objects name="System">
-      <object>objects\obj_GameState</object>
-      <object>objects\obj_pause</object>
+      <objects name="Pause">
+        <object>objects\obj_GameState</object>
+        <object>objects\obj_pause</object>
+      </objects>
       <objects name="Windows">
         <object>objects\obj_Window_Base</object>
         <object>objects\obj_text_background</object>
@@ -257,26 +308,31 @@
         <object>objects\obj_Window_Ingame_Menu</object>
       </objects>
       <object>objects\obj_new_text</object>
-      <object>objects\obj_menu_pause</object>
+      <object>objects\obj_menu_pauseTest</object>
+      <object>objects\obj_status</object>
     </objects>
     <objects name="Text objects">
       <object>objects\obj_text</object>
       <object>objects\obj_spawner</object>
     </objects>
-    <object>objects\obj_logo</object>
     <object>objects\obj_press_start</object>
-    <object>objects\obj_Preguntas_opciones</object>
     <objects name="Menu">
       <object>objects\object_menu</object>
+      <object>objects\obj_configuration</object>
       <object>objects\object_ingame_menu</object>
+    </objects>
+    <objects name="proves">
+      <object>objects\obj_Preguntas_opciones</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\room_Menu</room>
+    <room>rooms\Town</room>
+    <room>rooms\rm_Status</room>
+    <room>rooms\rm_Items</room>
     <rooms name="Menu">
       <room>rooms\Introduccion</room>
       <room>rooms\room_ingame_menu</room>
-      <room>rooms\rm_Items</room>
     </rooms>
     <rooms name="Rutas">
       <room>rooms\Ruta_2</room>
@@ -287,7 +343,6 @@
         <room>rooms\inside_house</room>
         <room>rooms\house2</room>
       </rooms>
-      <room>rooms\Town</room>
     </rooms>
     <rooms name="Xenon_City">
       <rooms name="Houses">
@@ -297,6 +352,7 @@
     </rooms>
     <rooms name="System">
       <room>rooms\rm_options</room>
+      <room>rooms\rm_optionsKey</room>
       <room>rooms\rm_menu_options</room>
       <rooms name="Tests">
         <room>rooms\prueba_de_conversaciones</room>

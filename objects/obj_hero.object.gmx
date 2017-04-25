@@ -25,8 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Image_speed
-
+            <string>///Declaration and inicialitzation of variables
 /*
 if ((keyboard_check_pressed(vk_left))|| (keyboard_check_pressed(vk_right)) || (keyboard_check_pressed(vk_up)) || (keyboard_check_pressed(vk_down)))
 {
@@ -37,6 +36,35 @@ image_speed=0; //Velocitat a la que el programa mou el sprite del personatge
 global.name="Hero";
 global.hablando=false;
 global.heroDirection = direction;
+
+
+global.isTalking = false; //Whether player is currently chatting
+
+oxygenMe = false; //A variable that can update if a certain converstaion is had
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Sets isTalking
+global.isTalking = false;
 </string>
           </argument>
         </arguments>
@@ -94,7 +122,7 @@ if ((room == room_ingame_menu)|| (room == rm_menu_options))
 if(global.hablando==true){
     exit;
 }
-
+if(!global.isTalking){
 
 if (keyboard_check(vk_left))//Comprova que la tecla s'ha apretat
 { 
@@ -124,7 +152,7 @@ else if (keyboard_check(vk_down)){
 } else{
     image_speed=0;
 }
-
+}
 //canviar els controls de if per un switch i case
 /* mou el sprite pero no canvia la posició
 if (keyboard_check_pressed(vk_anykey)){
@@ -150,6 +178,118 @@ switch (keyboard_key){
 }
 }
 */
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc2
+
+if(collision_circle(x, y, 64, obj_npc2, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 64, obj_npc2, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Conversation Checks
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 0)
+        oxygenMe = true;
+    else if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 1)
+        oxygenMe = false;
+}
+//Then act on that information after the conversation
+if(oxygenMe &amp;&amp; !global.isTalking) {
+    show_message("You obtain the element of Oxygen!");
+    //scr_itempickup(6);
+    if !object_get_visible(obj_orb_oxygen) object_set_visible(obj_orb_oxygen, true);
+    
+    oxygenMe = false;
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc1
+
+if(collision_circle(x, y, 64, obj_npc1, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 64, obj_npc1, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
+        //Call the script
+        scrDialogue();
+    }
+}
 </string>
           </argument>
         </arguments>

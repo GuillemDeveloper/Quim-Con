@@ -4,11 +4,13 @@ switch(mpos)
         room_goto(Introduccion);
         break;
     case 1:
-        show_message("Proximamente!!!");
+         //room_goto(1);
+         scr_loadgame();
+        //show_message("Proximamente!!!");
         break;
     
     case 2:
-        room_goto(rm_options);
+        room_goto(rm_optionsKey);
         break;
         
     case 3:

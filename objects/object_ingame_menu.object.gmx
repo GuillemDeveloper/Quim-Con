@@ -62,6 +62,8 @@ mpos=0;
 
 var move=0;
 
+//Aumenta o disminuye la posición en función de si mueves hacia arriba o hacia abajo
+
 move -= max(keyboard_check_pressed(vk_up), keyboard_check_pressed(ord("W")),0);
 move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")),0);
 
@@ -79,6 +81,7 @@ if(move != 0)
     
 }
 
+//Método para pulsar, actualmente puedes hacer que avance tanto con enter, espacio o shift
 var push;
 
 push = max(keyboard_check_released(vk_enter),keyboard_check_released(vk_shift),keyboard_check_released(vk_space),0);

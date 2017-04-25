@@ -143,7 +143,7 @@
     <instance objName="obj_pause" x="32" y="96" name="inst_4D1875AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ent_Xenon" x="480" y="0" name="inst_D7DAED27" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="45" y="14" name="inst_39C8FC70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cartel" x="461" y="138" name="inst_960E06A5" locked="0" code="text[0]=&quot;Ruta 2 --&gt; Xenon City&quot;;&#xA;totalLines=1;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cartel" x="461" y="138" name="inst_960E06A5" locked="0" code="text[0]=&quot;Route 2 --&gt; Xenon City&quot;;&#xA;totalLines=1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="208" y="208" name="inst_1739255E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="303" y="240" name="inst_4873262D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="369" y="240" name="inst_7EFA3B7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

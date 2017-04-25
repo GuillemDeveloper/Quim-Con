@@ -27,8 +27,8 @@
             <kind>1</kind>
             <string>///Create event pause
 global.pause=false;
-global.positX=0;
-global.positY=0;
+//global.positX=0;
+//global.positY=0;
 global.count=0;
 
 
@@ -69,10 +69,6 @@ if (global.pause){
     draw_text(room_width/2, room_height/2,"Game Paused!");
    draw_set_colour(c_black);
 
-    //instance_create (224, 320, obj_Menu_Save); Pendent de millora
-   // instance_create(224,380,obj_Menu_Exit);
-    //draw_text_transformed(300, 420, "Exit",2.5,2.5,image_angle);
-    
 
 }
 </string>
@@ -102,8 +98,11 @@ if (global.pause){
 if(global.hablando==true){
 exit;
 }
+if(global.isTalking){
+exit;
+}
 
-    if(global.pause == false)
+    if(!global.isTalking)
     {
         
         global.pause = true;
@@ -115,10 +114,17 @@ exit;
         ini_write_real( 'save1', 'Player Y position', obj_hero.y );
         ini_close();*/
         
+        global.positX = obj_hero.x;
+        global.positY = obj_hero.y;
+        
+
          //global.indexHero=object_get_sprite(obj_hero);
         
         object_set_persistent(obj_hero, false);
         //object_set_persistent(obj_npc1,false);
+        
+        //Mètode per mostrar de  fons de pantalla, la pantalla actual
+        //Guarda una foto del fons i la mostra a la room del menú
         screen_save("fondo.png");
         bck=background_add("fondo.png",true,true);
         room_set_background(room_ingame_menu,1,1,0,bck,0,0,1,1,0,0,0.8);

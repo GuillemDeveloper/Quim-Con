@@ -31,6 +31,7 @@ image_speed=0;//Velocitat a la que el programa mou el sprite del personatge
 _direction = "down";
 alarm[0]= room_speed * 1.5;
 
+var myMessage; //The message to display
 global.hablandonpc2 = false;
 drawText=false;
 t=0;
@@ -331,17 +332,6 @@ if(obj_npc1.phy_position_x==obj_collider.phy_position_x)&amp;&amp; (obj_npc1.phy
           <argument>
             <kind>1</kind>
             <string>///Dibujar rectangulo de texto y texto
-/*
-draw_self();
-if(draw==true){
-    draw_set_color(c_white);
-    draw_rectangle(0,400,640,480,false);
-    draw_set_color(c_black);
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_right);
-    draw_text(40,420,text);
-}
-*/
 
 draw_self();
 if(drawText==true){
@@ -366,7 +356,7 @@ if(drawText==true){
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="72">
       <action>
         <libid>1</libid>
         <id>603</id>

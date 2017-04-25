@@ -25,18 +25,24 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/*
-0 = verde
-1 = blanco
-2 = amarillo
-3 = anillo
+            <string>///Declaration of variables
+
+/*
+0 = Chlorine
+1 = Helium
+2 = Hydrogen
+3 = Iodine
+4 = Neon
+5 = Nitrogen
+6 = Oxygen
+7 = Phosphorus
 */
 
 globalvar showInv; //Display the inventory? Boolean
 showInv = true;
 
 globalvar maxItems; //Total items slots
-maxItems = 5;
+maxItems = 8;
 
 
 for(i = 0; i &lt; maxItems; i += 1)
@@ -67,7 +73,9 @@ for(i = 0; i &lt; maxItems; i += 1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(showInv)
+            <string>///Draw inventory items and rectangle
+
+if(showInv)
 { 
     var x1,x2,y1,y2;
     x1 = view_xview[0];
@@ -75,25 +83,78 @@ for(i = 0; i &lt; maxItems; i += 1)
     y1 = view_yview[0];
     //y2 = y1 + 64;
     
+    separationWidth = 64;
+    separationHeight = 128;
+    
+    xStart = 128;
+    xEnd = 416;
+    yStart = 128;
+    yEnd = 256;
     
     y2 = y1 + 460;
     
-    draw_set_color(c_dkgray);
+    /************************
+    Atributes of the rectangle
+    **************************/
+    /*draw_set_color(c_dkgray);
     draw_set_alpha(0.8);
     draw_rectangle(x1,y1,x2,y2,0);
-    draw_set_alpha(1);
+    draw_set_alpha(1);*/
+    /**************************/ 
     
+   /* for(i=0; i&lt; maxItems; i += 1)
+    {
+       // for(j=0; j &lt; 5; j+=1)
+        //{
+        draw_sprite(spr_border,0,x1+160+(j*40),y1+64+(i*10)); //Draw the rectangle
+       // if (global.inventory[i] != -1) //if inventory is not full
+          //  {
+                //draw_sprite(spr_orbs,global.inventory[i],x1+160+(j*40),y1+64+(i*40)); //Draw sprite of type (spr_item), select the position of the item in the arraylist (spr_item) and the x, y where it draws it.  
+            
+         //   draw_sprite(spr_orbs,global.inventory[i],x1+160,y1+64+(i*40)); //Draw sprite of type (spr_item), select the position of the item in the arraylist (spr_item) and the x, y where it draws it.  
+         
+          //  }
+        //}
+ //   }
   
-    
+   /* 
     for (i = 0; i &lt; maxItems; i += 1)
     {
+        if (i &lt; 5){
         //draw_sprite(spr_border,0,x1+24+(i * 40),y2-44);
-        draw_sprite(spr_border,0,x1+160,y1+64+(i*40));
+        draw_sprite(spr_border,0,x1+160+(i*40),y1+64);
+        }
+        if (i &gt;= 5 &amp;&amp; i &lt; 9){
+         
+        draw_sprite(spr_border,0,x1+160+(i*40),y1+64+40);
+        }
         if (global.inventory[i] != -1)
         {
             //draw_sprite(spr_item,global.inventory[i],x1+24+(i * 40),y2-44);
-            draw_sprite(spr_item,global.inventory[i],x1+160,y1+64+(i*40));
+           // draw_sprite(spr_item,global.inventory[i],x1+160,y1+64+(i*40));
+             if (i &lt; 5){
+        
+        draw_sprite(spr_item,global.inventory[i],x1+160+(i*40),y1+64);
         }
+        if (i &gt;= 5 &amp;&amp; i &lt; 9){
+         
+        draw_sprite(spr_item,global.inventory[i],x1+160+(i*40),y1+64+40);
+        }
+            
+        }
+    }*/
+    
+    for (i = 0; i &lt; maxItems; i++){
+     if (global.inventory[i] != -1)
+        {   
+    if(i &lt; 4){
+        draw_sprite(spr_orbs, global.inventory[i], xStart + i* (sprite_get_width(spr_item) +  separationWidth), yStart);
+    }
+    else if (i &gt;= 4){
+        draw_sprite(spr_orbs, global.inventory[i], xStart + (i-4)* (sprite_get_width(spr_item) +  separationWidth), yStart + separationHeight);
+    }
+        }
+        
     }
 }
 </string>
@@ -120,7 +181,7 @@ for(i = 0; i &lt; maxItems; i += 1)
             <kind>1</kind>
             <string>///Borrar objetos
 
-scr_itemdrop(2);
+scr_itemdrop(0);
 </string>
           </argument>
         </arguments>
@@ -148,10 +209,11 @@ scr_itemdrop(2);
 
 var addItem;
 
-addItem = scr_itempickup(random(4));
+addItem = scr_itempickup(0);
 
 if(addItem == 0)
 {
+    //show_message("inventory is full!");
     //Inventory is full!!!
 }
 </string>
@@ -176,7 +238,9 @@ if(addItem == 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_ingame_menu);
+            <string>///Volver a sala principal
+
+room_goto(room_ingame_menu);
 </string>
           </argument>
         </arguments>

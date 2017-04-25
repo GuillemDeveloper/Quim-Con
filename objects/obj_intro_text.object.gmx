@@ -163,7 +163,8 @@ if(drawText==true){
         //end talking
     } else{
         drawText=false;
-          room_goto(inside_house);
+          room_goto(Town);
+          instance_create(x, y, obj_hero);
           object_set_persistent(obj_hero, true);
       
     }

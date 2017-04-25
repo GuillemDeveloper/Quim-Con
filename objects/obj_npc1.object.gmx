@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///Image_speed
 image_speed=0.1;//Velocitat a la que el programa mou el sprite del personatge
+//image_speed = .05; //This way the robot is animating smoothly
+var myMessage; 
 
 _direction = "down";
 alarm[0]= room_speed * 1.5;
@@ -56,7 +58,7 @@ line=0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (_direction == "down")
+            <string>/*if (_direction == "down")
 {
     _direction = "right";
 }
@@ -71,7 +73,7 @@ else if (_direction == "up")
 else if (_direction == "left")
 {
     _direction = "down";
-}
+}*/
 
 alarm[0] = room_speed * 1.5;
 </string>
@@ -134,7 +136,7 @@ if (place_meeting(x,y,obj_hero)){
     phy_position_x += 0;
     phy_position_y += 0;
     image_speed=0;
-} else
+}/* else
 {
     image_speed = 0.1;
     if (_direction == "up")
@@ -163,7 +165,7 @@ if (place_meeting(x,y,obj_hero)){
     }
 }
 
-
+*/
 
 
 
@@ -346,7 +348,7 @@ if(drawText==true){
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
+    <event eventtype="9" enumb="85">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -363,7 +365,7 @@ if(drawText==true){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(distance_to_object(obj_hero)&lt;16){ //Comprobar si heroe está cerca
+            <string>/*if(distance_to_object(obj_hero)&lt;16){ //Comprobar si heroe está cerca
     var xx=obj_hero.x+16*cos(degtorad(obj_hero.image_angle));
     var yy=obj_hero.y-16*sin(degtorad(obj_hero.image_angle));
     if(collision_line(obj_hero.x, obj_hero.y, xx, yy, id, false, false)){
@@ -377,7 +379,7 @@ if(drawText==true){
         /*if((keyboard_check(vk_left)) || (keyboard_check(vk_right)) || (keyboard_check(vk_up)) || (keyboard_check(vk_down)) || (keyboard_check(vk_escape))){
             
         }*/
-        global.hablando=true;
+      /*  global.hablando=true;
         //nueva linea de texto
     } else if(line&lt;totalLines-1){
         t=0;
