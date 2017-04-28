@@ -117,10 +117,10 @@ if(drawText==true){
     draw_set_color(c_white);
     //draw_rectangle(0,view_hview-128,view_wview,view_hview,false);
      draw_rectangle(0,440,640,480,false);
+     
     draw_set_color(c_black);
     
-   // draw_text(32,view_hview-96,string_copy(text[line],1,t));
-     draw_text(40,460,string_copy(text[line],1,t));
+     draw_text(288,460,string_copy(text[line],1,t));
     if(t&lt;=string_length(text[line])){
         t++;
     }
@@ -163,8 +163,8 @@ if(drawText==true){
         //end talking
     } else{
         drawText=false;
-          room_goto(Town);
-          instance_create(x, y, obj_hero);
+          room_goto(house2);
+          instance_create(113, 113, obj_hero);
           object_set_persistent(obj_hero, true);
       
     }

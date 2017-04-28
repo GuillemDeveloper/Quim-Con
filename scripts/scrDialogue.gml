@@ -7,7 +7,8 @@ dialogueBox = instance_create(320, 400, objDialogueBox);
 with(dialogueBox) {
     //Set the variables of the box created
     //maxLength = sprite_width - 48; //The text won't flow beyond the edges of our sprite
-    maxLength = view_wview[0];
+    //maxLength = view_wview[0];
+    maxLength = room_width - 96;
     maxHeight = sprite_height - 48; //The text won't flow out of the edges of our sprite
     myMessage = messageGiver.myDialogue[index1, index2]; //Grab the message from the messageGiver
     messageIndex = 0; //Start at 0 with the message to display in the dialogueBox
@@ -16,7 +17,7 @@ with(dialogueBox) {
         hasChoices = true;
     else
         hasChoices = false;
-    show_message(index1); //Show the actual index for check answers. 99 to exit. 
+    //show_message(index1); //Show the actual index for check answers. 99 to exit. 
     //Splits the message from the NPC up into multiple parts, if it's too long
     if(string_height_ext(myMessage, 16, maxLength) > maxHeight) {
         textHeight = string_height_ext(messageGiver.myDialogue[index1, index2], 16, maxLength); //Get how high the message is going to be

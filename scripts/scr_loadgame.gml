@@ -4,8 +4,10 @@ if (file_exists("Save.sav"))
     ini_open("Save.sav");
 
     var LoadedRoom = ini_read_real("Save1","room",0);
+    var nameHero = ini_read_string("Save1", "name", "hero");
     var positX = ini_read_real("Save1","posX",0);
     var positY = ini_read_real("Save1","posY",0);
+    var subimg = ini_read_real("Save1","subimg",0);
     var Cl = ini_read_string("Save1", "chlorine", "false");
     var He = ini_read_string("Save1", "helium", "false");
     var H = ini_read_string("Save1", "hydrogen", "false");
@@ -17,9 +19,12 @@ if (file_exists("Save.sav"))
     
         ini_close();
     var roomname = room_get_name(LoadedRoom);
-    show_message(roomname);
     room_goto(LoadedRoom);
     instance_create(positX, positY, obj_hero);
+     with(obj_hero){
+        sprite_index = subimg;
+    }
+    global.name= nameHero;
 
   if(Cl == "true"){
         object_set_visible(obj_orb_chlorine,true);

@@ -6,8 +6,10 @@ ini_write_real("Save1","room",SavedRoom);
 ini_write_real("Save1", "posX", 128);
 ini_write_real("Save1", "posY", 192);
 } else{*/
+ini_write_string("Save1", "name", global.name);
 ini_write_real("Save1", "posX", global.positX);
 ini_write_real("Save1", "posY", global.positY);
+ini_write_real("Save1", "subimg", global.indsprite);
 scr_save_Orbs();
 ini_write_string("Save1", "chlorine", global.chlorine);
 ini_write_string("Save1", "helium", global.helium);

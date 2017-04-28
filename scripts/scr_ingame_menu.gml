@@ -14,6 +14,7 @@ switch(mpos)
         break;
         
     case 1: //Estado
+        //instance_deactivate_object(obj_hero);
         room_goto(rm_Status);
         break;
     
@@ -24,11 +25,10 @@ switch(mpos)
         
     case 3: //Save
         scr_savegame();
-        show_message(global.positX);
         break;
         
     case 4: //Options
-        room_goto(rm_menu_options);
+        room_goto(rm_ingame_optionsKey);
         break;
         
     case 5: //End

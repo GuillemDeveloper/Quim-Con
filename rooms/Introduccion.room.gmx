@@ -31,7 +31,7 @@
     <yoffset>0</yoffset>
   </makerSettings>
   <backgrounds>
-    <background visible="-1" foreground="0" name="wallpaper_intro" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bck_intro" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,8 +51,9 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_intro_text" x="288" y="384" name="inst_9A356B18" locked="0" code="/*text[0] = &quot;Historicamente, el mundo se regia por las esferas&quot;;&#xA;text[1] = &quot;de la tabla periodica de Mendeleiev.&quot;;&#xA;text[2] = &quot;Hasta ahora, que un mago desconocido ha dispersado las esferas&quot;;&#xA;text[3] = &quot;por todo el mundo sumiendolo en el caos.&quot;;&#xA;text[4] = &quot;Tu mision, joven heroe es recuperar las esferas&quot;;&#xA;text[5] = &quot; y devolver la paz a nuestro mundo.&quot;;&#xA;*/&#xA;&#xA;text[0] = &quot;Anciently, the world was ruled by the spheres &quot;;&#xA;text[1] = &quot;of Mendeleev's periodic table.&quot;;&#xA;text[2] = &quot;Until now, that an unknown magician has scattered the spheres&quot;;&#xA;text[3] = &quot;over the world wreaking havoc into it.&quot;;&#xA;text[4] = &quot;Your mision young heroe, is to recover the spheres&quot;;&#xA;text[5] = &quot; and to bring peace back to our world.&quot;;&#xA;&#xA;totalLines=6;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_intro_text" x="32" y="160" name="inst_9A356B18" locked="0" code="/*text[0] = &quot;Historicamente, el mundo se regia por las esferas&quot;;&#xA;text[1] = &quot;de la tabla periodica de Mendeleiev.&quot;;&#xA;text[2] = &quot;Hasta ahora, que un mago desconocido ha dispersado las esferas&quot;;&#xA;text[3] = &quot;por todo el mundo sumiendolo en el caos.&quot;;&#xA;text[4] = &quot;Tu mision, joven heroe es recuperar las esferas&quot;;&#xA;text[5] = &quot; y devolver la paz a nuestro mundo.&quot;;&#xA;*/&#xA;&#xA;text[0] = &quot;Anciently, the world was ruled by the spheres &quot;;&#xA;text[1] = &quot;of Mendeleev's periodic table.&quot;;&#xA;text[2] = &quot;Until now, that an unknown magician# has scattered the spheres&quot;;&#xA;text[3] = &quot;over the world wreaking havoc into it.&quot;;&#xA;text[4] = &quot;Your mision young heroe, is to #recover the spheres&quot;;&#xA;text[5] = &quot; and to bring peace back to our world.&quot;;&#xA;&#xA;totalLines=6;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_press_start" x="288" y="192" name="inst_4CBB1FBB" locked="0" code="" scaleX="2" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueSystem" x="544" y="352" name="inst_C7928259" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

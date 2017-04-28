@@ -19,6 +19,12 @@
         <sprite>sprites\spr_cat_right</sprite>
         <sprite>sprites\spr_cat_up</sprite>
       </sprites>
+      <sprites name="wolf">
+        <sprite>sprites\spr_wolf_down</sprite>
+        <sprite>sprites\spr_wolf_left</sprite>
+        <sprite>sprites\spr_wolf_right</sprite>
+        <sprite>sprites\spr_wolf_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="NPCS">
       <sprites name="npc1">
@@ -38,6 +44,24 @@
         <sprite>sprites\npc3_left</sprite>
         <sprite>sprites\npc3_right</sprite>
         <sprite>sprites\npc3_up</sprite>
+      </sprites>
+      <sprites name="npc4">
+        <sprite>sprites\npc4_down</sprite>
+        <sprite>sprites\npc4_left</sprite>
+        <sprite>sprites\npc4_right</sprite>
+        <sprite>sprites\npc4_up</sprite>
+      </sprites>
+      <sprites name="npc5">
+        <sprite>sprites\spr_npc5_down</sprite>
+        <sprite>sprites\spr_npc5_left</sprite>
+        <sprite>sprites\spr_npc5_right</sprite>
+        <sprite>sprites\spr_npc5_up</sprite>
+      </sprites>
+      <sprites name="npc6">
+        <sprite>sprites\spr_npc6_down</sprite>
+        <sprite>sprites\spr_npc6_left</sprite>
+        <sprite>sprites\spr_npc6_right</sprite>
+        <sprite>sprites\spr_npc6_up</sprite>
       </sprites>
     </sprites>
     <sprites name="Collider">
@@ -78,6 +102,22 @@
       </sprites>
       <sprite>sprites\spr_text_background</sprite>
       <sprite>sprites\spr_arrow</sprite>
+      <sprites name="InputName">
+        <sprite>sprites\spr_textName</sprite>
+        <sprite>sprites\spr_name</sprite>
+        <sprite>sprites\spr_orbs_container</sprite>
+        <sprite>sprites\spr_enter</sprite>
+      </sprites>
+      <sprites name="tutorial">
+        <sprite>sprites\spr_arrows</sprite>
+        <sprite>sprites\spr_move</sprite>
+        <sprite>sprites\spr_tutorialExit</sprite>
+        <sprite>sprites\spr_tutorialTalk</sprite>
+        <sprite>sprites\spr_tutorial</sprite>
+        <sprite>sprites\spr_spacebar</sprite>
+        <sprite>sprites\spr_escapeKey</sprite>
+        <sprite>sprites\spr_tutorialEnter</sprite>
+      </sprites>
     </sprites>
     <sprites name="background animated">
       <sprite>sprites\flower</sprite>
@@ -104,6 +144,10 @@
     <sprites name="Choices">
       <sprite>sprites\spr_ChoiceBox</sprite>
       <sprite>sprites\spr_DialogueBox</sprite>
+    </sprites>
+    <sprites name="doors">
+      <sprite>sprites\spr_door_Town</sprite>
+      <sprite>sprites\spr_door_Town_open</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -139,6 +183,8 @@
       <background>background\background17</background>
       <background>background\water</background>
       <background>background\wallpaper_intro</background>
+      <background>background\bck_portada</background>
+      <background>background\bck_intro</background>
     </backgrounds>
     <backgrounds name="System">
       <backgrounds name="Options">
@@ -151,6 +197,7 @@
       <background>background\background19</background>
     </backgrounds>
     <background>background\bck_inventory</background>
+    <background>background\bck_status</background>
   </backgrounds>
   <paths name="paths">
     <paths name="Helio Town">
@@ -177,6 +224,7 @@
     <scripts name="Menu">
       <script>scripts\scr_menu.gml</script>
       <script>scripts\scr_configuration.gml</script>
+      <script>scripts\scr_configuration_ingame.gml</script>
       <script>scripts\scr_ingame_menu.gml</script>
     </scripts>
     <scripts name="Orbs">
@@ -194,6 +242,7 @@
     <scripts name="Save &amp; Load">
       <script>scripts\scr_savegame.gml</script>
       <script>scripts\scr_loadgame.gml</script>
+      <script>scripts\scr_newgame.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -204,12 +253,15 @@
     <objects name="Animals">
       <object>objects\obj_cat</object>
       <object>objects\catMove</object>
+      <object>objects\obj_wolf</object>
     </objects>
     <objects name="characters">
       <object>objects\obj_hero</object>
-      <object>objects\obj_npc1</object>
+      <object>objects\obj_npc4</object>
       <object>objects\obj_npc1_new</object>
       <object>objects\obj_npc2</object>
+      <object>objects\obj_npc5</object>
+      <object>objects\obj_npc6</object>
       <object>objects\obj_npc3</object>
     </objects>
     <objects name="Collider">
@@ -249,6 +301,8 @@
           <objects name="Ruta1">
             <object>objects\obj_Ent_Ruta1</object>
             <object>objects\obj_Sal_Ruta1</object>
+            <object>objects\obj_doorTown</object>
+            <object>objects\obj_doorRuta1</object>
           </objects>
           <objects name="Ruta_2">
             <object>objects\obj_Ent_Ruta_2</object>
@@ -309,30 +363,52 @@
       </objects>
       <object>objects\obj_new_text</object>
       <object>objects\obj_menu_pauseTest</object>
-      <object>objects\obj_status</object>
+      <objects name="InputName">
+        <object>objects\obj_name</object>
+        <object>objects\obj_enter</object>
+        <object>objects\obj_textName</object>
+      </objects>
+      <objects name="Press Button">
+        <object>objects\obj_press_start</object>
+        <object>objects\obj_start</object>
+      </objects>
     </objects>
     <objects name="Text objects">
       <object>objects\obj_text</object>
       <object>objects\obj_spawner</object>
     </objects>
-    <object>objects\obj_press_start</object>
     <objects name="Menu">
       <object>objects\object_menu</object>
       <object>objects\obj_configuration</object>
+      <object>objects\obj_ingame_configuration</object>
       <object>objects\object_ingame_menu</object>
+      <object>objects\obj_status</object>
     </objects>
     <objects name="proves">
       <object>objects\obj_Preguntas_opciones</object>
     </objects>
+    <object>objects\obj_locker</object>
+    <object>objects\obj_Introduccio</object>
+    <objects name="tutorial">
+      <object>objects\obj_arrows</object>
+      <object>objects\obj_spacebar</object>
+      <object>objects\obj_escapeKey</object>
+      <object>objects\obj_tutorial</object>
+      <object>objects\obj_move</object>
+      <object>objects\obj_tutorialExit</object>
+      <object>objects\obj_tutorialTalk</object>
+      <object>objects\obj_tutorialEnter</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_portada</room>
     <room>rooms\room_Menu</room>
     <room>rooms\Town</room>
     <room>rooms\rm_Status</room>
     <room>rooms\rm_Items</room>
     <rooms name="Menu">
-      <room>rooms\Introduccion</room>
       <room>rooms\room_ingame_menu</room>
+      <room>rooms\Introduccion</room>
     </rooms>
     <rooms name="Rutas">
       <room>rooms\Ruta_2</room>
@@ -352,7 +428,10 @@
     </rooms>
     <rooms name="System">
       <room>rooms\rm_options</room>
+      <room>rooms\room_name</room>
+      <room>rooms\room_tutorial</room>
       <room>rooms\rm_optionsKey</room>
+      <room>rooms\rm_ingame_optionsKey</room>
       <room>rooms\rm_menu_options</room>
       <rooms name="Tests">
         <room>rooms\prueba_de_conversaciones</room>

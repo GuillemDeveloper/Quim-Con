@@ -1,12 +1,11 @@
 switch(mpos)
 {
     case 0:
-        room_goto(Introduccion);
+        scr_newgame();
+        room_goto(room_name);
         break;
-    case 1:
-         //room_goto(1);
-         scr_loadgame();
-        //show_message("Proximamente!!!");
+    case 1:        
+        scr_loadgame();
         break;
     
     case 2:

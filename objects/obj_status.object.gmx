@@ -161,6 +161,7 @@ if(drawText==true){
             <kind>1</kind>
             <string>///Return to ingame menu
 room_goto(room_ingame_menu);
+//instance_activate_object(obj_hero);
 </string>
           </argument>
         </arguments>

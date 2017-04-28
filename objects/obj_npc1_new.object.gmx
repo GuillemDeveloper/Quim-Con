@@ -207,55 +207,6 @@ if(drawText==true){
         </arguments>
       </action>
     </event>
-    <event eventtype="9" enumb="32">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(distance_to_object(obj_hero)&lt;16){ //Comprobar si heroe está cerca
-    var xx=obj_hero.x+16*cos(degtorad(obj_hero.image_angle));
-    var yy=obj_hero.y-16*sin(degtorad(obj_hero.image_angle));
-    if(collision_line(obj_hero.x, obj_hero.y, xx, yy, id, false, false)){
-        sprite_index = npc2_left;
-    //Empezar a hablar
-    if(drawText==false){
-        drawText=true;
-        //obj_hero.free=false;
-        t=0;
-        line=0;
-        /*if((keyboard_check(vk_left)) || (keyboard_check(vk_right)) || (keyboard_check(vk_up)) || (keyboard_check(vk_down)) || (keyboard_check(vk_escape))){
-            
-        }*/
-        global.hablando=true;
-        //nueva linea de texto
-    } else if(line&lt;totalLines-1){
-        t=0;
-        line++;
-        //end talking
-    } else{
-        drawText=false;
-        global.hablando=false;
-        //obj_hero.free=true;
-    }
- }
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
   </events>
   <PhysicsObject>-1</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

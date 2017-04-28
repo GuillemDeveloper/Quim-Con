@@ -48,10 +48,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Ruta1); //Cambia la room a la ruta 1, a la posició asignada abaix de la nova room
+            <string>
+if (object_get_visible(obj_orb_oxygen)) &amp;&amp; (object_get_visible(obj_orb_neon)){
+room_goto(Ruta1); //Cambia la room a la ruta 1, a la posició asignada abaix de la nova room
 obj_hero.x = 320;
 obj_hero.y = 416;
-
+}
 </string>
           </argument>
         </arguments>
