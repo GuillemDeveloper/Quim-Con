@@ -24,7 +24,8 @@ switch(mpos)
         break;
         
     case 3: //Save
-        scr_savegame();
+        room_goto(room_saving);
+        //scr_text("Saved", 30, 0, 0);
         break;
         
     case 4: //Options

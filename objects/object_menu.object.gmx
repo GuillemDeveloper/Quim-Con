@@ -67,6 +67,7 @@ move += max(keyboard_check_pressed(vk_down), keyboard_check_pressed(ord("S")),0)
 if(move != 0)
 {
     mpos += move;
+    audio_play_sound(snd_menu, 0, 0);
     if(mpos&lt;0)
     { 
         mpos = array_length_1d(menu) - 1;

@@ -4,7 +4,13 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\test</sound>
+    <sound>sound\snd_prologue</sound>
+    <sound>sound\snd_load_Save</sound>
+    <sound>sound\snd_achievement</sound>
+    <sound>sound\snd_menu</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="hero">
       <sprite>sprites\sprit_hero_down</sprite>
@@ -105,6 +111,8 @@
       <sprites name="InputName">
         <sprite>sprites\spr_textName</sprite>
         <sprite>sprites\spr_name</sprite>
+        <sprite>sprites\spr_exit</sprite>
+        <sprite>sprites\spr_selectedExit</sprite>
         <sprite>sprites\spr_orbs_container</sprite>
         <sprite>sprites\spr_enter</sprite>
       </sprites>
@@ -118,6 +126,8 @@
         <sprite>sprites\spr_escapeKey</sprite>
         <sprite>sprites\spr_tutorialEnter</sprite>
       </sprites>
+      <sprite>sprites\spr_saving</sprite>
+      <sprite>sprites\spr_selectedSaving</sprite>
     </sprites>
     <sprites name="background animated">
       <sprite>sprites\flower</sprite>
@@ -223,6 +233,8 @@
     </scripts>
     <scripts name="Menu">
       <script>scripts\scr_menu.gml</script>
+      <script>scripts\scr_loading_menu.gml</script>
+      <script>scripts\scr_saving_menu.gml</script>
       <script>scripts\scr_configuration.gml</script>
       <script>scripts\scr_configuration_ingame.gml</script>
       <script>scripts\scr_ingame_menu.gml</script>
@@ -240,9 +252,20 @@
       <script>scripts\scr_text.gml</script>
     </scripts>
     <scripts name="Save &amp; Load">
+      <script>scripts\scr_newgame.gml</script>
       <script>scripts\scr_savegame.gml</script>
       <script>scripts\scr_loadgame.gml</script>
-      <script>scripts\scr_newgame.gml</script>
+      <script>scripts\scr_loadgame2.gml</script>
+      <script>scripts\scr_loadgame3.gml</script>
+      <script>scripts\scr_saving1.gml</script>
+      <script>scripts\scr_saving2.gml</script>
+      <script>scripts\scr_saving3.gml</script>
+    </scripts>
+    <scripts name="music">
+      <script>scripts\scr_musicOn.gml</script>
+      <script>scripts\scr_musicOff.gml</script>
+      <script>scripts\scr_music_down.gml</script>
+      <script>scripts\scr_music_up.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -379,6 +402,8 @@
     </objects>
     <objects name="Menu">
       <object>objects\object_menu</object>
+      <object>objects\obj_loading_menu</object>
+      <object>objects\obj_saving_menu</object>
       <object>objects\obj_configuration</object>
       <object>objects\obj_ingame_configuration</object>
       <object>objects\object_ingame_menu</object>
@@ -399,6 +424,13 @@
       <object>objects\obj_tutorialTalk</object>
       <object>objects\obj_tutorialEnter</object>
     </objects>
+    <objects name="Save/Load">
+      <object>objects\obj_save1</object>
+      <object>objects\obj_save2</object>
+      <object>objects\obj_save3</object>
+      <object>objects\obj_exit</object>
+    </objects>
+    <object>objects\obj_music</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_portada</room>
@@ -406,6 +438,10 @@
     <room>rooms\Town</room>
     <room>rooms\rm_Status</room>
     <room>rooms\rm_Items</room>
+    <rooms name="Load/Save">
+      <room>rooms\room_loading</room>
+      <room>rooms\room_saving</room>
+    </rooms>
     <rooms name="Menu">
       <room>rooms\room_ingame_menu</room>
       <room>rooms\Introduccion</room>

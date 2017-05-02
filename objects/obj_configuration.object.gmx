@@ -29,7 +29,9 @@
 
 menu[0]="Music On";
 menu[1]="Music Off";
-menu[2]="Return";
+menu[2]="Increase volume";
+menu[3]="Decrease volume";
+menu[4]="Return";
 
 
 space=64;

@@ -49,6 +49,15 @@ hydrogenMe = false;
 iodineMe = false;
 nitrogenMe = false;
 phosphorusMe = false;
+
+countO = 0;
+countNe = 0;
+countCl = 0;
+countHe = 0;
+countH = 0;
+countI = 0;
+countN = 0;
+countP = 0;
 </string>
           </argument>
         </arguments>
@@ -120,9 +129,9 @@ global.isTalking = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Handle Input Logic
+            <string>///Movement Input Logic
 
-if ((room == room_ingame_menu)|| (room == rm_ingame_optionsKey) || (room == rm_Status) || (room == rm_Items))
+if ((room == room_ingame_menu)|| (room == rm_ingame_optionsKey) || (room == rm_Status) || (room == rm_Items)|| (room == room_saving))
 {
     sprite_index = -1;
     exit; 
@@ -249,40 +258,6 @@ if(collision_circle(x, y, 64, obj_npc2, true, true) &amp;&amp; !global.isTalking
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Oxygen item selection
-if(global.isTalking) {
-    //While chatting, if player chooses the bite me option, set that variable to true
-    if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 0)
-        oxygenMe = true;
-    else if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 1)
-        oxygenMe = false;
-}
-//Then act on that information after the conversation
-if(oxygenMe &amp;&amp; !global.isTalking) {
-    if !object_get_visible(obj_orb_oxygen) object_set_visible(obj_orb_oxygen, true);
-    
-    //oxygenMe = false;
-} 
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>///Mètode per parlar entre npc4 y hero
 
 if(collision_circle(x, y, 64, obj_npc4, true, true) &amp;&amp; !global.isTalking) {
@@ -307,40 +282,6 @@ if(collision_circle(x, y, 64, obj_npc4, true, true) &amp;&amp; !global.isTalking
         scrDialogue();
     }
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Neon item selection
-if(global.isTalking) {
-    //While chatting, if player chooses the bite me option, set that variable to true
-    if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc4 &amp;&amp; index2 == 0)
-        neonMe = true;
-    else if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc4 &amp;&amp; index2 != 0)
-        neonMe = false;
-}
-//Then act on that information after the conversation
-if(neonMe &amp;&amp; !global.isTalking) {
-    if !object_get_visible(obj_orb_neon) object_set_visible(obj_orb_neon, true);
-    
-    //neonMe = false;
-} 
 </string>
           </argument>
         </arguments>
@@ -442,24 +383,63 @@ if(collision_circle(x, y, 64, obj_npc5, true, true) &amp;&amp; !global.isTalking
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Method to read route 1 panel
-
-if(collision_circle(x, y, 64, obj_cartel, true, true) &amp;&amp; !global.isTalking) {
-    //If so, and they press space, begin a conversation
-    if(keyboard_check_pressed(vk_space)) {
-        //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_cartel, true, true);
-        //Set the global variable PCTalking
-        PCTalking = self;
-        //Set to true, so she can't move
-        global.isTalking = true;
-        //Default values of index1, index2
-        index1 = 0;
-        index2 = 0;
-        //Call the script
-        scrDialogue();
-    }
+            <string>///Oxygen item selection
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 0)
+        oxygenMe = true;
+    else if(index1 == 02 &amp;&amp; messageGiver.object_index == obj_npc2 &amp;&amp; currentChoice == 1)
+        oxygenMe = false;
 }
+//Then act on that information after the conversation
+if(oxygenMe &amp;&amp; !global.isTalking) {
+    if !object_get_visible(obj_orb_oxygen) object_set_visible(obj_orb_oxygen, true);
+    if (countO == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countO+=1;
+    } 
+
+    
+    //oxygenMe = false;
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Neon item selection
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc4 &amp;&amp; index2 == 0)
+        neonMe = true;
+    else if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc4 &amp;&amp; index2 != 0)
+        neonMe = false;
+}
+//Then act on that information after the conversation
+if(neonMe &amp;&amp; !global.isTalking) {
+    if !object_get_visible(obj_orb_neon) object_set_visible(obj_orb_neon, true);
+     if (countNe == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countNe += 1;
+    } 
+
+    //neonMe = false;
+} 
 </string>
           </argument>
         </arguments>
@@ -491,15 +471,16 @@ if(global.isTalking) {
 //Then act on that information after the conversation
 if(chlorineMe &amp;&amp; !global.isTalking) {
     if !object_get_visible(obj_orb_chlorine) object_set_visible(obj_orb_chlorine, true);
-    
+      if (countCl == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countCl += 1;
+    } 
     //neonMe = false;
 } 
 </string>
           </argument>
         </arguments>
       </action>
-    </event>
-    <event eventtype="4" ename="obj_collider">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -516,13 +497,30 @@ if(chlorineMe &amp;&amp; !global.isTalking) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Collide With
+            <string>///Method to read route 1 panel
+
+if(collision_circle(x, y, 64, obj_cartel, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 64, obj_cartel, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
+        //Call the script
+        scrDialogue();
+    }
+}
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_npc4">
+    <event eventtype="4" ename="obj_collider">
       <action>
         <libid>1</libid>
         <id>603</id>

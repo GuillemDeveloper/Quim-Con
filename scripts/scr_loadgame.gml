@@ -1,7 +1,7 @@
-if (file_exists("Save.sav"))
+if (file_exists("Save1.sav"))
 {
     
-    ini_open("Save.sav");
+    ini_open("Save1.sav");
 
     var LoadedRoom = ini_read_real("Save1","room",0);
     var nameHero = ini_read_string("Save1", "name", "hero");
@@ -19,6 +19,7 @@ if (file_exists("Save.sav"))
     
         ini_close();
     var roomname = room_get_name(LoadedRoom);
+    audio_play_sound(snd_load_Save, 0, 0);
     room_goto(LoadedRoom);
     instance_create(positX, positY, obj_hero);
      with(obj_hero){

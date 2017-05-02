@@ -5,7 +5,7 @@ switch(mpos)
         room_goto(room_name);
         break;
     case 1:        
-        scr_loadgame();
+        room_goto(room_loading);
         break;
     
     case 2:
