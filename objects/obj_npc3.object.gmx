@@ -35,7 +35,7 @@ drawText=false;
 t=0;
 line=0;
 
-myPath = path_start(path_npc3_Xenon,1.5, 1, true);
+myPath = path_start(path_npc3_Xenon,1, 1, true);
 
 
 last_x=phy_position_x;
