@@ -10,7 +10,7 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>scr_text("Route 2", 30, 0, 0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -41,7 +41,7 @@
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
   </backgrounds>
   <views>
-    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
+    <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="320" hview="240" xport="0" yport="0" wport="640" hport="480" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
@@ -77,10 +77,6 @@
     <instance objName="obj_collider" x="239" y="335" name="inst_FBF5B1C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="273" y="334" name="inst_EA6BD287" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="399" y="334" name="inst_5640C31C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="336" y="464" name="inst_C231F890" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="336" y="433" name="inst_B2719D17" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="207" y="463" name="inst_7FAE8E55" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="209" y="432" name="inst_F5E2ABCA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="624" y="16" name="inst_749C7B7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="624" y="48" name="inst_0E7FD71C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="624" y="80" name="inst_1F9AF94F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -99,7 +95,7 @@
     <instance objName="obj_collider" x="594" y="463" name="inst_9A020822" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="561" y="464" name="inst_3FB0AEB9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="529" y="463" name="inst_D26B0A47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="494" y="463" name="inst_BC69EC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="497" y="463" name="inst_BC69EC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="462" y="463" name="inst_506FDE35" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="430" y="463" name="inst_6FF2C440" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="398" y="465" name="inst_EDA69FC2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -143,7 +139,7 @@
     <instance objName="obj_pause" x="32" y="96" name="inst_4D1875AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Ent_Xenon" x="480" y="0" name="inst_D7DAED27" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="45" y="14" name="inst_39C8FC70" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_cartel" x="461" y="138" name="inst_960E06A5" locked="0" code="text[0]=&quot;Route 2 --&gt; Xenon City&quot;;&#xA;totalLines=1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_cartel" x="461" y="138" name="inst_960E06A5" locked="0" code="myDialogue[0,0] = &quot;Route 2 --&gt; Xenon City&quot;;&#xA;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="208" y="208" name="inst_1739255E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="303" y="240" name="inst_4873262D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="369" y="240" name="inst_7EFA3B7E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -170,6 +166,15 @@
     <instance objName="obj_water" x="304" y="208" name="inst_18E5F497" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="336" y="208" name="inst_639492C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_water" x="368" y="208" name="inst_B9F2BB8E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_column" x="208" y="432" name="inst_C539D300" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_column" x="338" y="432" name="inst_A03FFDC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_doorRuta2" x="510" y="15" name="inst_54C10AF5" locked="0" code="" scaleX="0.699999988079071" scaleY="0.800000011920929" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="112" y="96" name="inst_F653387F" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="527" y="304" name="inst_00C1C43E" locked="0" code="" scaleX="3" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="497" y="384" name="inst_113FDFE2" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_npc8" x="48" y="46" name="inst_5D4043BB" locked="0" code="myDialogue[0,0] = &quot;Hi, young master!Which element his name has a reference to the sun?&quot;;&#xA;&#xA;myDialogue[0,1] = &quot;Sunnium!&quot; + &quot;03&quot;;&#xA;myDialogue[0,2] = &quot;Selenium.&quot; + &quot;01&quot;;&#xA;myDialogue[0,3] = &quot;Helium&quot; + &quot;02&quot;;&#xA;myDialogue[0,4] = &quot;Sulfur&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[1,0] = &quot;You're wrong.&quot;;&#xA;&#xA;myDialogue[2,0] = &quot;The name of helios in greek it's sun. Next Question: At which group it belongs?&quot;;&#xA;myDialogue[2,1] = &quot;Alkali.&quot; + &quot;01&quot;;&#xA;myDialogue[2,2] = &quot;Actinide.&quot; + &quot;01&quot;;&#xA;myDialogue[2,3] = &quot;Metalloid.&quot; + &quot;01&quot;;&#xA;myDialogue[2,4] = &quot;Noble Gas.&quot; + &quot;05&quot;;&#xA;&#xA;myDialogue[5,0] = &quot;It's ok. Next Question: Colour of this gas?&quot;;&#xA;myDialogue[5,1] = &quot;Colourless.&quot; + &quot;06&quot;;&#xA;myDialogue[5,2] = &quot;Grey.&quot; + &quot;01&quot;;&#xA;myDialogue[5,3] = &quot;White.&quot; + &quot;01&quot;;&#xA;myDialogue[5,4] = &quot;Red.&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[6,0] = &quot;Amazing! Last one:#How many maximum valences it has?&quot;;&#xA;myDialogue[6,1] = &quot;Zero.&quot; + &quot;04&quot;;&#xA;myDialogue[6,2] = &quot;One.&quot; + &quot;01&quot;;&#xA;myDialogue[6,3] = &quot;Three.&quot; + &quot;01&quot;;&#xA;myDialogue[6,4] = &quot;Seven.&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[3,0] = &quot;Sunnium not exists. These element is known for changing the voice when you inhale it.&quot;;&#xA;&#xA;myDialogue[4,0]= &quot;You obtain the helium element!&quot;;&#xA;&#xA;myDialogue[7,0] = &quot;You're near the end. Good luck!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_npc9" x="538" y="430" name="inst_3A14BC11" locked="0" code="myDialogue[0,0] = &quot;Hi! Which element is the 7th element of the periodic table?#&quot;;&#xA;&#xA;&#xA;myDialogue[0,1] = &quot;Silver&quot; + &quot;01&quot;;&#xA;myDialogue[0,2] = &quot;Nitrogen&quot; + &quot;02&quot;;&#xA;myDialogue[0,3] = &quot;Iron&quot; + &quot;01&quot;;&#xA;myDialogue[0,4] = &quot;Hint please!&quot; + &quot;03&quot;;&#xA;&#xA;myDialogue[1,0] = &quot;You're wrong.&quot;;&#xA;&#xA;myDialogue[2,0] = &quot;Correct. Next Question: At which phase can we found it apart from gas?&quot;;&#xA;myDialogue[2,1] = &quot;Plasma.&quot; + &quot;01&quot;;&#xA;myDialogue[2,2] = &quot;Solid.&quot; + &quot;01&quot;;&#xA;myDialogue[2,3] = &quot;Liquid.&quot; + &quot;05&quot;;&#xA;myDialogue[2,4] = &quot;Only gas.&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[5,0] = &quot;Correct. We can found it liquid but only manufactured industrially. Next Question:# When was discovered?&quot;;&#xA;myDialogue[5,1] = &quot;16th Century.&quot; + &quot;01&quot;;&#xA;myDialogue[5,2] = &quot;18th Century.&quot; + &quot;06&quot;;&#xA;myDialogue[5,3] = &quot;19th Century.&quot; + &quot;01&quot;;&#xA;myDialogue[5,4] = &quot;20th Century.&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[6,0] = &quot;You're good, but final one it will be hard.#Which of these compounds are not made by nitrogen?&quot;;&#xA;myDialogue[6,1] = &quot;Ammonia.&quot; + &quot;01&quot;;&#xA;myDialogue[6,2] = &quot;Hydrazine.&quot; + &quot;01&quot;;&#xA;myDialogue[6,3] = &quot;Amide.&quot; + &quot;01&quot;;&#xA;myDialogue[6,4] = &quot;Ethanol.&quot; + &quot;04&quot;;&#xA;&#xA;&#xA;myDialogue[3,0] = &quot;It's used for car racing. It appears in films like Fast&amp;Furious.&quot;;&#xA;&#xA;myDialogue[4,0]= &quot;Perfect! Ethanol is made of Oxygen, Hydrogen and Carbon. C2H6O.# You obtain the nitrogen element!&quot;;&#xA;&#xA;myDialogue[7,0] = &quot;Be aware of the invisible walls.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueSystem" x="576" y="160" name="inst_0DBBDEC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="192" y="448" w="32" h="32" xo="192" yo="64" id="10003542" name="inst_43BC4839" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -482,8 +487,6 @@
     <tile bgName="background0" x="128" y="352" w="32" h="32" xo="16" yo="640" id="10004061" name="inst_339AAEA7" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="160" y="352" w="32" h="32" xo="16" yo="640" id="10004062" name="inst_5591E77F" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="192" y="352" w="32" h="32" xo="16" yo="640" id="10004063" name="inst_EFCE7856" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background0" x="190" y="399" w="32" h="80" xo="448" yo="1824" id="10004092" name="inst_0DAFB496" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background0" x="319" y="402" w="32" h="80" xo="448" yo="1824" id="10004093" name="inst_52C4C42B" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="512" y="96" w="32" h="32" xo="16" yo="624" id="10004095" name="inst_A913BA4C" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="512" y="64" w="32" h="32" xo="32" yo="576" id="10004104" name="inst_89D76656" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="480" y="64" w="32" h="32" xo="32" yo="576" id="10004105" name="inst_74A92492" depth="990000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

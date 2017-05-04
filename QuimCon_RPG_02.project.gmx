@@ -69,6 +69,30 @@
         <sprite>sprites\spr_npc6_right</sprite>
         <sprite>sprites\spr_npc6_up</sprite>
       </sprites>
+      <sprites name="npc7">
+        <sprite>sprites\spr_npc7_left</sprite>
+        <sprite>sprites\spr_npc7_up</sprite>
+        <sprite>sprites\spr_npc7_right</sprite>
+        <sprite>sprites\spr_npc7_down</sprite>
+      </sprites>
+      <sprites name="npc8">
+        <sprite>sprites\spr_npc8_left</sprite>
+        <sprite>sprites\spr_npc8_right</sprite>
+        <sprite>sprites\spr_npc8_down</sprite>
+        <sprite>sprites\spr_npc8_up</sprite>
+      </sprites>
+      <sprites name="evilMage">
+        <sprite>sprites\spr_npc_evilmage_down</sprite>
+        <sprite>sprites\spr_npc_evilmage_left</sprite>
+        <sprite>sprites\spr_npc_evilmage_right</sprite>
+        <sprite>sprites\spr_npc_evilmage_up</sprite>
+      </sprites>
+      <sprites name="npc9">
+        <sprite>sprites\spr_npc9_down</sprite>
+        <sprite>sprites\spr_npc9_left</sprite>
+        <sprite>sprites\spr_npc9_right</sprite>
+        <sprite>sprites\spr_npc9_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="Collider">
       <sprite>sprites\collider</sprite>
@@ -132,6 +156,7 @@
     <sprites name="background animated">
       <sprite>sprites\flower</sprite>
       <sprite>sprites\spr_water</sprite>
+      <sprite>sprites\spr_tree_move</sprite>
     </sprites>
     <sprites name="items">
       <sprite>sprites\spr_border</sprite>
@@ -158,6 +183,18 @@
     <sprites name="doors">
       <sprite>sprites\spr_door_Town</sprite>
       <sprite>sprites\spr_door_Town_open</sprite>
+      <sprite>sprites\spr_door_Castle</sprite>
+      <sprite>sprites\spr_door_Castle_open</sprite>
+      <sprite>sprites\spr_door_locked</sprite>
+    </sprites>
+    <sprites name="icons">
+      <sprite>sprites\spr_pub_icon</sprite>
+      <sprite>sprites\spr_tree_xenon</sprite>
+      <sprite>sprites\spr_streelight</sprite>
+      <sprite>sprites\spr_banister</sprite>
+      <sprite>sprites\spr_column</sprite>
+      <sprite>sprites\spr_column_green</sprite>
+      <sprite>sprites\spr_Helio_Tree</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -176,6 +213,7 @@
       <background>background\pianos_and_clocks</background>
       <background>background\Stairs</background>
       <background>background\barandillas</background>
+      <background>background\floors</background>
     </backgrounds>
     <backgrounds name="Kitchen">
       <background>background\kitchen</background>
@@ -188,6 +226,7 @@
       <background>background\plants</background>
       <background>background\Signs</background>
       <background>background\water_background</background>
+      <background>background\mageCity</background>
     </backgrounds>
     <backgrounds name="Wallpapers">
       <background>background\background17</background>
@@ -285,6 +324,10 @@
       <object>objects\obj_npc2</object>
       <object>objects\obj_npc5</object>
       <object>objects\obj_npc6</object>
+      <object>objects\obj_npc7</object>
+      <object>objects\obj_npc8</object>
+      <object>objects\obj_npc9</object>
+      <object>objects\obj_evil_mage</object>
       <object>objects\obj_npc3</object>
     </objects>
     <objects name="Collider">
@@ -318,6 +361,15 @@
           <objects name="Xenon City">
             <object>objects\obj_Ent_Xenon</object>
             <object>objects\obj_Sal_Xenon</object>
+            <objects name="castle">
+              <object>objects\obj_Ent_Castle</object>
+              <object>objects\obj_Sal_Castle</object>
+              <object>objects\obj_doorCastle</object>
+            </objects>
+            <objects name="Lab">
+              <object>objects\obj_Sal_Lab</object>
+              <object>objects\obj_Ent_Lab</object>
+            </objects>
           </objects>
         </objects>
         <objects name="Rutas">
@@ -329,6 +381,7 @@
           </objects>
           <objects name="Ruta_2">
             <object>objects\obj_Ent_Ruta_2</object>
+            <object>objects\obj_doorRuta2</object>
             <object>objects\obj_Sal_Ruta_2</object>
           </objects>
         </objects>
@@ -337,7 +390,19 @@
     </objects>
     <objects name="Environment">
       <object>objects\obj_flower</object>
+      <object>objects\obj_tree_move</object>
+      <object>objects\obj_cartel</object>
+      <object>objects\obj_door_locked</object>
       <object>objects\obj_water</object>
+      <objects name="static">
+        <object>objects\obj_banister</object>
+        <object>objects\obj_pub_icon</object>
+        <object>objects\obj_tree_xenon</object>
+        <object>objects\obj_streetlight</object>
+        <object>objects\obj_column_green</object>
+        <object>objects\obj_column</object>
+        <object>objects\obj_tree_helio</object>
+      </objects>
     </objects>
     <objects name="Inventory">
       <object>objects\obj_inventory</object>
@@ -354,7 +419,6 @@
         <object>objects\obj_orb_phosphorus</object>
       </objects>
     </objects>
-    <object>objects\obj_cartel</object>
     <objects name="System">
       <objects name="Pause">
         <object>objects\obj_GameState</object>
@@ -409,9 +473,6 @@
       <object>objects\object_ingame_menu</object>
       <object>objects\obj_status</object>
     </objects>
-    <objects name="proves">
-      <object>objects\obj_Preguntas_opciones</object>
-    </objects>
     <object>objects\obj_locker</object>
     <object>objects\obj_Introduccio</object>
     <objects name="tutorial">
@@ -458,6 +519,7 @@
     </rooms>
     <rooms name="Xenon_City">
       <rooms name="Houses">
+        <room>rooms\room_Castle</room>
         <room>rooms\House_Lab</room>
       </rooms>
       <room>rooms\Xenon_City</room>

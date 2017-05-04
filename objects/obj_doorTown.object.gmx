@@ -50,7 +50,7 @@ sprite_index=spr_door_Town;
           <argument>
             <kind>1</kind>
             <string>///Open the door
-if (object_get_visible(obj_orb_oxygen)) &amp;&amp; (object_get_visible(obj_orb_neon)){
+if (object_get_visible(obj_orb_oxygen) &amp;&amp; object_get_visible(obj_orb_neon) &amp;&amp; object_get_visible(obj_orb_hydrogen)){
     sprite_index = spr_door_Town_open;
 }
 </string>

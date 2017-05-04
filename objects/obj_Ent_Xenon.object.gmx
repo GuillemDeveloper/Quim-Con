@@ -48,10 +48,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(Xenon_City);
+            <string>if (object_get_visible(obj_orb_nitrogen) &amp;&amp; object_get_visible(obj_orb_helium)){
+room_goto(Xenon_City);
 obj_hero.x = 352;
 obj_hero.y = 544;
-
+}
 
 </string>
           </argument>

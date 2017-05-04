@@ -6,11 +6,11 @@
   <vsnap>32</vsnap>
   <hsnap>32</hsnap>
   <isometric>0</isometric>
-  <speed>30</speed>
+  <speed>60</speed>
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code></code>
+  <code>scr_text("House lab", 30, 0, 0);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -52,6 +52,25 @@
   </views>
   <instances>
     <instance objName="obj_pause" x="32" y="128" name="inst_83C8E1C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objDialogueSystem" x="544" y="96" name="inst_20C88FDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="159" y="48" name="inst_4C321003" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="161" y="84" name="inst_47FD9EBF" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="306" y="61" name="inst_B44BC456" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="16" y="226" name="inst_E80D4280" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="623" y="221" name="inst_88DE46F9" locked="0" code="" scaleX="1" scaleY="16" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="304" y="322" name="inst_33B034D4" locked="0" code="" scaleX="1" scaleY="10" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="160" y="463" name="inst_51AF0867" locked="0" code="" scaleX="8" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="241" y="240" name="inst_5EBD0C12" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="80" y="238" name="inst_7BC4689C" locked="0" code="" scaleX="3" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="576" y="271" name="inst_2672260A" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="400" y="349" name="inst_60A3D036" locked="0" code="" scaleX="1" scaleY="8" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="448" y="271" name="inst_4F5CEAF7" locked="0" code="" scaleX="2" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="509" y="463" name="inst_908A383B" locked="0" code="" scaleX="6" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="434" y="405" name="inst_12E3E4AC" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="588" y="408" name="inst_6190C729" locked="0" code="" scaleX="1" scaleY="2" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="46" y="347" name="inst_43832FE3" locked="0" code="" scaleX="1" scaleY="4" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="463" y="52" name="inst_60A9636F" locked="0" code="" scaleX="9" scaleY="3" colour="4294967295" rotation="0"/>
+    <instance objName="obj_Sal_Lab" x="320" y="459" name="inst_4AF85C3D" locked="0" code="" scaleX="2" scaleY="0.5" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="0" y="0" w="32" h="32" xo="128" yo="128" id="10004130" name="inst_5A71CF4C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -499,6 +518,9 @@
     <tile bgName="background0" x="576" y="288" w="32" h="32" xo="720" yo="288" id="10005281" name="inst_79230852" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="288" y="64" w="32" h="32" xo="720" yo="272" id="10005284" name="inst_9432B54E" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="288" y="96" w="32" h="32" xo="720" yo="288" id="10005285" name="inst_B0B779BB" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background0" x="64" y="288" w="8" h="8" xo="0" yo="0" id="10009699" name="inst_0289A0F1" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background0" x="96" y="256" w="32" h="32" xo="728" yo="288" id="10009701" name="inst_7B9EDE86" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background0" x="96" y="224" w="32" h="32" xo="720" yo="272" id="10009702" name="inst_9C271546" depth="980000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="desk" x="58" y="55" w="72" h="56" xo="280" yo="72" id="10004782" name="inst_6568B0AC" depth="970000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="beds" x="571" y="369" w="40" h="80" xo="352" yo="96" id="10005289" name="inst_47DA0BB4" depth="970000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="beds" x="415" y="370" w="40" h="80" xo="352" yo="96" id="10005290" name="inst_5E826EFE" depth="970000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

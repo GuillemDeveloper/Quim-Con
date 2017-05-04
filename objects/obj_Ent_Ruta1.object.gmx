@@ -49,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>
-if (object_get_visible(obj_orb_oxygen)) &amp;&amp; (object_get_visible(obj_orb_neon)){
+if (object_get_visible(obj_orb_oxygen) &amp;&amp; object_get_visible(obj_orb_neon)&amp;&amp; object_get_visible(obj_orb_hydrogen)){
 room_goto(Ruta1); //Cambia la room a la ruta 1, a la posició asignada abaix de la nova room
 obj_hero.x = 320;
 obj_hero.y = 416;

@@ -383,6 +383,135 @@ if(collision_circle(x, y, 64, obj_npc5, true, true) &amp;&amp; !global.isTalking
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc7
+
+if(collision_circle(x, y, 64, obj_npc7, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 64, obj_npc7, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+          if(object_get_visible(obj_orb_hydrogen) == true){
+            index1=7;
+            index2=0;
+        } else{
+        index1 = 0;
+        index2 = 0;
+        }
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc8
+
+if(collision_circle(x, y, 32, obj_npc8, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 32, obj_npc8, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+          if(object_get_visible(obj_orb_helium) == true){
+            index1=7;
+            index2=0;
+        } else{
+        index1 = 0;
+        index2 = 0;
+        }
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc9
+
+if(collision_circle(x, y, 32, obj_npc9, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 32, obj_npc9, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+          if(object_get_visible(obj_orb_nitrogen) == true){
+            index1=7;
+            index2=0;
+        } else{
+        index1 = 0;
+        index2 = 0;
+        }
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Oxygen item selection
 if(global.isTalking) {
     //While chatting, if player chooses the bite me option, set that variable to true
@@ -402,6 +531,44 @@ if(oxygenMe &amp;&amp; !global.isTalking) {
     
     //oxygenMe = false;
 } 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i evil_mage
+
+if(collision_circle(x, y, 64, obj_evil_mage, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 64, obj_evil_mage, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
+        //Call the script
+        scrDialogue();
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -497,13 +664,162 @@ if(chlorineMe &amp;&amp; !global.isTalking) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Method to read route 1 panel
+            <string>/// Hydrogen item selection
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc7 &amp;&amp; index2 == 0)
+        hydrogenMe = true;
+    else if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc7 &amp;&amp; index2 != 0)
+        hydrogenMe = false;
+}
+//Then act on that information after the conversation
+if(hydrogenMe &amp;&amp; !global.isTalking) {
+    if !object_get_visible(obj_orb_hydrogen) object_set_visible(obj_orb_hydrogen, true);
+      if (countH == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countH += 1;
+    } 
+    //neonMe = false;
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Nitrogen item selection
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc9 &amp;&amp; index2 == 0)
+        nitrogenMe = true;
+    else if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc9 &amp;&amp; index2 != 0)
+        nitrogenMe = false;
+}
+//Then act on that information after the conversation
+if(nitrogenMe &amp;&amp; !global.isTalking) {
+    if !object_get_visible(obj_orb_nitrogen) object_set_visible(obj_orb_nitrogen, true);
+      if (countN == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countN += 1;
+    } 
+    //neonMe = false;
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Helium item selection
+if(global.isTalking) {
+    //While chatting, if player chooses the bite me option, set that variable to true
+    if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc8 &amp;&amp; index2 == 0)
+        heliumMe = true;
+    else if(index1 == 04 &amp;&amp; messageGiver.object_index == obj_npc8 &amp;&amp; index2 != 0)
+        heliumMe = false;
+}
+//Then act on that information after the conversation
+if(heliumMe &amp;&amp; !global.isTalking) {
+    if !object_get_visible(obj_orb_helium) object_set_visible(obj_orb_helium, true);
+      if (countHe == 0){
+            audio_play_sound(snd_achievement, 0,0);
+            countHe += 1;
+    } 
+
+} 
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Method to read route panels
 
 if(collision_circle(x, y, 64, obj_cartel, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
         messageGiver = collision_circle(x, y, 64, obj_cartel, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Method to read locked doors
+
+if(collision_circle(x, y, 16, obj_door_locked, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 16, obj_door_locked, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
