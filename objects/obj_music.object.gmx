@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>audio_play_sound(snd_prologue, 0, 1);
+            <string>
+audio_pause_all();
+
+audio_play_sound(snd_prologue, 0, 1);
+
+
 </string>
           </argument>
         </arguments>

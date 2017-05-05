@@ -10,6 +10,8 @@
     <sound>sound\snd_load_Save</sound>
     <sound>sound\snd_achievement</sound>
     <sound>sound\snd_menu</sound>
+    <sound>sound\snd_dark_amulet</sound>
+    <sound>sound\snd_soliloquy</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="hero">
@@ -92,6 +94,18 @@
         <sprite>sprites\spr_npc9_left</sprite>
         <sprite>sprites\spr_npc9_right</sprite>
         <sprite>sprites\spr_npc9_up</sprite>
+      </sprites>
+      <sprites name="npc10">
+        <sprite>sprites\spr_npc10_down</sprite>
+        <sprite>sprites\spr_npc10_left</sprite>
+        <sprite>sprites\spr_npc10_right</sprite>
+        <sprite>sprites\spr_npc10_up</sprite>
+      </sprites>
+      <sprites name="npc11">
+        <sprite>sprites\spr_npc11_down</sprite>
+        <sprite>sprites\spr_npc11_left</sprite>
+        <sprite>sprites\spr_npc11_right</sprite>
+        <sprite>sprites\spr_npc11_up</sprite>
       </sprites>
     </sprites>
     <sprites name="Collider">
@@ -310,6 +324,7 @@
   <fonts name="fonts">
     <font>fonts\fnt</font>
     <font>fonts\font_menu</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <objects name="Animals">
@@ -327,6 +342,8 @@
       <object>objects\obj_npc7</object>
       <object>objects\obj_npc8</object>
       <object>objects\obj_npc9</object>
+      <object>objects\obj_npc10</object>
+      <object>objects\obj_npc11</object>
       <object>objects\obj_evil_mage</object>
       <object>objects\obj_npc3</object>
     </objects>
@@ -449,7 +466,6 @@
         <object>objects\obj_Window_Ingame_Menu</object>
       </objects>
       <object>objects\obj_new_text</object>
-      <object>objects\obj_menu_pauseTest</object>
       <objects name="InputName">
         <object>objects\obj_name</object>
         <object>objects\obj_enter</object>
@@ -459,6 +475,8 @@
         <object>objects\obj_press_start</object>
         <object>objects\obj_start</object>
       </objects>
+      <object>objects\obj_credits</object>
+      <object>objects\obj_end</object>
     </objects>
     <objects name="Text objects">
       <object>objects\obj_text</object>
@@ -491,7 +509,10 @@
       <object>objects\obj_save3</object>
       <object>objects\obj_exit</object>
     </objects>
-    <object>objects\obj_music</object>
+    <objects name="Music">
+      <object>objects\obj_music</object>
+      <object>objects\obj_music_boss</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_portada</room>
@@ -527,6 +548,8 @@
     <rooms name="System">
       <room>rooms\rm_options</room>
       <room>rooms\room_name</room>
+      <room>rooms\room_credits</room>
+      <room>rooms\room_end</room>
       <room>rooms\room_tutorial</room>
       <room>rooms\rm_optionsKey</room>
       <room>rooms\rm_ingame_optionsKey</room>
