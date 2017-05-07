@@ -2,6 +2,7 @@
 //Create the dialogue box in the middle of the screen
 //*/*dialogueBox = instance_create(300, 580, objDialogueBox);
 dialogueBox = instance_create(320, 400, objDialogueBox);
+//dialogueBox = instance_create(400, 530, objDialogueBox);
 //dialogueBox = instance_create(view_wport[view_current] / 2 , view_hport[view_current] / 2, objDialogueBox);
 //With allows us to access the variables of dialogueBox with an accessor (.) each time
 with(dialogueBox) {

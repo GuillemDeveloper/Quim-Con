@@ -30,6 +30,7 @@
 menu[0]="New Game";
 menu[1]="Continue";
 menu[2]="Options";
+menu[3]="Exit";
 
 
 space=128;
@@ -132,15 +133,23 @@ if(mpos==0){
      obj_save1.sprite_index = spr_selectedSaving;
      obj_save2.sprite_index = spr_saving;
      obj_save3.sprite_index = spr_saving;
+     obj_exit.sprite_index = spr_exit;
 } else if(mpos==1){
     obj_save1.sprite_index = spr_saving;
     obj_save3.sprite_index = spr_saving;
     obj_save2.sprite_index = spr_selectedSaving;
+    obj_exit.sprite_index = spr_exit;
 } else if(mpos==2){
     obj_save1.sprite_index = spr_saving;
     obj_save2.sprite_index = spr_saving;
     obj_save3.sprite_index = spr_selectedSaving;
-}
+    obj_exit.sprite_index = spr_exit;
+} else if(mpos==3){
+    obj_save1.sprite_index = spr_saving;
+    obj_save2.sprite_index = spr_saving;
+    obj_save3.sprite_index = spr_saving;
+    obj_exit.sprite_index = spr_selectedExit;
+} 
 
 
 </string>

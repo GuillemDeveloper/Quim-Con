@@ -219,11 +219,11 @@ switch (keyboard_key){
             <kind>1</kind>
             <string>///Mètode per parlar entre hero i npc2
 
-if(collision_circle(x, y, 64, obj_npc2, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 32, obj_npc2, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_npc2, true, true);
+        messageGiver = collision_circle(x, y, 32, obj_npc2, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
@@ -262,11 +262,11 @@ if(collision_circle(x, y, 64, obj_npc2, true, true) &amp;&amp; !global.isTalking
             <kind>1</kind>
             <string>///Mètode per parlar entre npc4 y hero
 
-if(collision_circle(x, y, 64, obj_npc4, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 32, obj_npc4, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_npc4, true, true);
+        messageGiver = collision_circle(x, y, 32, obj_npc4, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
@@ -306,11 +306,11 @@ if(collision_circle(x, y, 64, obj_npc4, true, true) &amp;&amp; !global.isTalking
             <kind>1</kind>
             <string>///Mètode per parlar entre npc6 (route1) y hero
 
-if(collision_circle(x, y, 64, obj_npc6, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 32, obj_npc6, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_npc6, true, true);
+        messageGiver = collision_circle(x, y, 32, obj_npc6, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
@@ -347,13 +347,13 @@ if(collision_circle(x, y, 64, obj_npc6, true, true) &amp;&amp; !global.isTalking
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Mètode per parlar entre hero i npc5
+            <string>///Mètode per parlar entre hero i npc5 (house 2 explicacio)
 
-if(collision_circle(x, y, 64, obj_npc5, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 16, obj_npc5, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_npc5, true, true);
+        messageGiver = collision_circle(x, y, 16, obj_npc5, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
@@ -387,11 +387,11 @@ if(collision_circle(x, y, 64, obj_npc5, true, true) &amp;&amp; !global.isTalking
             <kind>1</kind>
             <string>///Mètode per parlar entre hero i npc7(HelioTown)
 
-if(collision_circle(x, y, 64, obj_npc7, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 32, obj_npc7, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_npc7, true, true);
+        messageGiver = collision_circle(x, y, 32, obj_npc7, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move
@@ -404,6 +404,83 @@ if(collision_circle(x, y, 64, obj_npc7, true, true) &amp;&amp; !global.isTalking
         index1 = 0;
         index2 = 0;
         }
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc1_new(HelioTown)
+
+if(collision_circle(x, y, 24, obj_npc1_new, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 24, obj_npc1_new, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2       
+        index1 = 0;
+        index2 = 0;
+        
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc12 (house 2 menu escape)
+
+if(collision_circle(x, y, 32, obj_npc12, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 32, obj_npc12, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2
+        index1 = 0;
+        index2 = 0;
         //Call the script
         scrDialogue();
     }
@@ -557,6 +634,45 @@ if(collision_circle(x, y, 32, obj_npc10, true, true) &amp;&amp; !global.isTalkin
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>///Mètode per parlar entre hero i npc3(Xenon)
+
+if(collision_circle(x, y, 32, obj_npc3, true, true) &amp;&amp; !global.isTalking) {
+    //If so, and they press space, begin a conversation
+    if(keyboard_check_pressed(vk_space)) {
+        //Set the global variable messageGiver
+        messageGiver = collision_circle(x, y, 32, obj_npc3, true, true);
+        //Set the global variable PCTalking
+        PCTalking = self;
+        //Set to true, so she can't move
+        global.isTalking = true;
+        //Default values of index1, index2       
+        index1 = 0;
+        index2 = 0;
+        
+        //Call the script
+        scrDialogue();
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
             <string>///Mètode per parlar entre hero i npc11(lab)
 
 if(collision_circle(x, y, 32, obj_npc11, true, true) &amp;&amp; !global.isTalking) {
@@ -641,11 +757,11 @@ if(oxygenMe &amp;&amp; !global.isTalking) {
             <kind>1</kind>
             <string>///Mètode per parlar entre hero i evil_mage
 
-if(collision_circle(x, y, 64, obj_evil_mage, true, true) &amp;&amp; !global.isTalking) {
+if(collision_circle(x, y, 32, obj_evil_mage, true, true) &amp;&amp; !global.isTalking) {
     //If so, and they press space, begin a conversation
     if(keyboard_check_pressed(vk_space)) {
         //Set the global variable messageGiver
-        messageGiver = collision_circle(x, y, 64, obj_evil_mage, true, true);
+        messageGiver = collision_circle(x, y, 32, obj_evil_mage, true, true);
         //Set the global variable PCTalking
         PCTalking = self;
         //Set to true, so she can't move

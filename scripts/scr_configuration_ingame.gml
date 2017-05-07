@@ -9,16 +9,16 @@ switch(mpos)
         //show_message("Music Off!#Proximamente!!!");
         break;
         
-   case 2:
+ /*  case 2:
       scr_music_up();
         break;
         
     case 3:
       scr_music_down();
         break;
+        */
         
-        
-    case 4:
+    case 2:
         room_goto(room_ingame_menu);
         break;
 

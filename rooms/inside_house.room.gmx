@@ -51,26 +51,14 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_collider" x="48" y="80" name="inst_A2BA09CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="80" y="80" name="inst_D75AFD96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="272" y="80" name="inst_E9EFF40C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="112" y="80" name="inst_1CD343CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="240" y="80" name="inst_AC778688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="208" y="80" name="inst_836B3CCE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="144" y="80" name="inst_08998BA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="176" y="80" name="inst_C4DADAC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="160" y="72" name="inst_A2BA09CB" locked="0" code="" scaleX="8" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="240" name="inst_B0B41E4A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="176" y="240" name="inst_3047E08F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="144" y="240" name="inst_3747E2D7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="112" y="240" name="inst_076AF87F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="80" y="240" name="inst_884A76EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="48" y="240" name="inst_02C0796C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="80" y="208" name="inst_9B48A710" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="112" y="208" name="inst_1C5C18DA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="124" y="208" name="inst_B6B866EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="125" y="176" name="inst_6DCA933D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="81" y="176" name="inst_F5AC40B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="102" y="176" name="inst_EF50900B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="103" y="194" name="inst_9B48A710" locked="0" code="" scaleX="2.29999995231628" scaleY="1.89999997615814" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="157" name="inst_777AF862" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="187" name="inst_2A8782A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="208" name="inst_F0F65CEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -84,11 +72,10 @@
     <instance objName="obj_collider" x="336" y="240" name="inst_E8DD626F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="368" y="240" name="inst_B8754E46" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="369" y="273" name="inst_B0D12194" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="336" y="273" name="inst_9615B767" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="336" y="304" name="inst_03D40CB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="336" y="275" name="inst_9615B767" locked="0" code="" scaleX="1" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="304" y="304" name="inst_1FB1F2B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="272" y="273" name="inst_227D1F49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="272" y="304" name="inst_0C0D2AA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="272" y="296" name="inst_0C0D2AA2" locked="0" code="" scaleX="1" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="304" y="400" name="inst_4E3140EB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="304" y="432" name="inst_6AE0E0D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="304" y="464" name="inst_DA9F8FE0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -171,8 +158,6 @@
     <instance objName="obj_collider" x="624" y="208" name="inst_B89A5B08" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="592" y="48" name="inst_D1288E37" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="560" y="48" name="inst_29DE2F0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="528" y="48" name="inst_4E421FE8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="496" y="48" name="inst_BFD68103" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="464" y="48" name="inst_034975CD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="432" y="48" name="inst_18BBCD32" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="400" y="48" name="inst_A0844E60" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -191,35 +176,24 @@
     <instance objName="obj_collider" x="112" y="272" name="inst_91973926" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="144" y="272" name="inst_576CBE31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="176" y="272" name="inst_C5639984" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="592" y="80" name="inst_166A81D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="560" y="80" name="inst_F2CBDAEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="528" y="80" name="inst_F7EFA7D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="505" y="80" name="inst_67B4CAD7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="592" y="112" name="inst_7F9439D2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="560" y="112" name="inst_FFEF5403" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="528" y="112" name="inst_07E8A01E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="592" y="208" name="inst_D9FCD2A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="592" y="83" name="inst_166A81D9" locked="0" code="" scaleX="1" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="560" y="83" name="inst_F2CBDAEE" locked="0" code="" scaleX="1" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="536" y="83" name="inst_F7EFA7D2" locked="0" code="" scaleX="0.5" scaleY="1.20000004768372" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="336" y="80" name="inst_BD2F56B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="368" y="80" name="inst_852CE163" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="48" y="432" name="inst_8E9BDF1D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="48" y="288" name="inst_CDE19269" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="112" y="368" name="inst_A09D93B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="144" y="368" name="inst_7EE0156A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="176" y="368" name="inst_B1CE8E4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_collider" x="592" y="432" name="inst_4D9CE241" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="464" y="400" name="inst_CC9D323D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="432" y="400" name="inst_26EC7CC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="490" y="400" name="inst_725D9321" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="490" y="368" name="inst_C2E9EE62" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="464" y="368" name="inst_F83F8F74" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="432" y="368" name="inst_62D56DF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="560" y="208" name="inst_A65DACF7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="592" y="176" name="inst_DA847CEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_collider" x="48" y="400" name="inst_79A2FFF8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_npc4" x="144" y="288" name="inst_C073B969" locked="0" code="myDialogue[0,0] = &quot;Hi young boy! Do you know which of those element is a noble gas?&quot; &#xA;&#xA;myDialogue[0,1] = &quot;Hydrogen!&quot; + &quot;01&quot;;&#xA;myDialogue[0,2] = &quot;Hint, please!&quot; + &quot;03&quot;;&#xA;myDialogue[0,3] = &quot;Neon&quot; + &quot;02&quot;;&#xA;myDialogue[0,4] = &quot;Tellurium&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[2,0] = &quot;Correct answer! Next question:# Which is his symbol?&quot;;&#xA;myDialogue[2,1] = &quot;Ne&quot; + &quot;05&quot;;&#xA;myDialogue[2,2] = &quot;Ni&quot; + &quot;01&quot;;&#xA;myDialogue[2,3] = &quot;Na&quot; + &quot;01&quot;;&#xA;myDialogue[2,4] = &quot;N&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[5,0] = &quot;Correct answer! Next question:# Which is his atomic number?&quot;;&#xA;myDialogue[5,1] = &quot;03&quot; + &quot;01&quot;;&#xA;myDialogue[5,2] = &quot;15&quot; + &quot;01&quot;;&#xA;myDialogue[5,3] = &quot;11&quot; + &quot;01&quot;;&#xA;myDialogue[5,4] = &quot;10&quot; + &quot;04&quot;;&#xA;&#xA;myDialogue[1,0] = &quot;You're wrong.&quot;;&#xA;&#xA;myDialogue[3,0] = &quot;It's used to elaborate lightnings displays in cities like New York or las Vegas.&quot;;&#xA;&#xA;myDialogue[4,0]= &quot;You obtain the Neon element!&quot;;&#xA;&#xA;myDialogue[7,0] = &quot;Good luck!&quot;;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="470" y="381" name="inst_26EC7CC5" locked="0" code="" scaleX="2.75" scaleY="1.70000004768372" colour="4294967295" rotation="0"/>
+    <instance objName="obj_npc4" x="144" y="288" name="inst_C073B969" locked="0" code="myDialogue[0,0] = &quot;Hi young boy! Do you know which of those element is a noble gas?&quot; &#xA;&#xA;myDialogue[0,1] = &quot;Hydrogen!&quot; + &quot;01&quot;;&#xA;myDialogue[0,2] = &quot;Hint, please!&quot; + &quot;03&quot;;&#xA;myDialogue[0,3] = &quot;Neon&quot; + &quot;02&quot;;&#xA;myDialogue[0,4] = &quot;Tellurium&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[2,0] = &quot;Correct answer! Next question:# Which is its symbol?&quot;;&#xA;myDialogue[2,1] = &quot;Ne&quot; + &quot;05&quot;;&#xA;myDialogue[2,2] = &quot;Ni&quot; + &quot;01&quot;;&#xA;myDialogue[2,3] = &quot;Na&quot; + &quot;01&quot;;&#xA;myDialogue[2,4] = &quot;N&quot; + &quot;01&quot;;&#xA;&#xA;myDialogue[5,0] = &quot;Correct answer! Next question:# Which is his atomic number?&quot;;&#xA;myDialogue[5,1] = &quot;03&quot; + &quot;01&quot;;&#xA;myDialogue[5,2] = &quot;15&quot; + &quot;01&quot;;&#xA;myDialogue[5,3] = &quot;11&quot; + &quot;01&quot;;&#xA;myDialogue[5,4] = &quot;10&quot; + &quot;04&quot;;&#xA;&#xA;myDialogue[1,0] = &quot;You're wrong.&quot;;&#xA;&#xA;myDialogue[3,0] = &quot;It's used to elaborate lightnings displays in cities like New York or las Vegas.&quot;;&#xA;&#xA;myDialogue[4,0]= &quot;You obtain the Neon element!&quot;;&#xA;&#xA;myDialogue[7,0] = &quot;Good luck!&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_Hero_Salida" x="224" y="448" name="inst_1198A540" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_pause" x="32" y="96" name="inst_F37EA731" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objDialogueSystem" x="128" y="96" name="inst_2AF60DA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plant1" x="48" y="404" name="inst_D622E057" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_plant2" x="580" y="187" name="inst_F210EB42" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_collider" x="512" y="54" name="inst_E414B504" locked="0" code="" scaleX="2" scaleY="1.39999997615814" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="256" y="320" w="32" h="32" xo="96" yo="448" id="10001533" name="inst_59D48610" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -669,8 +643,6 @@
     <tile bgName="chairs" x="551" y="292" w="32" h="32" xo="224" yo="144" id="10001391" name="inst_D0AB4D9C" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Stuff_tiles" x="539" y="271" w="24" h="24" xo="0" yo="8" id="10001397" name="inst_2E2051D7" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="Stuff_tiles" x="577" y="269" w="32" h="16" xo="0" yo="304" id="10001400" name="inst_DE7E2320" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="plants" x="29" y="376" w="48" h="72" xo="88" yo="312" id="10002055" name="inst_AFFF8ABE" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="plants" x="558" y="155" w="48" h="72" xo="88" yo="312" id="10002058" name="inst_C437A7B2" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="plants" x="567" y="386" w="40" h="56" xo="40" yo="312" id="10002065" name="inst_6516AA92" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="plants" x="250" y="253" w="40" h="56" xo="40" yo="312" id="10002084" name="inst_9F351405" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="background0" x="433" y="36" w="16" h="16" xo="0" yo="0" id="10002094" name="inst_B0C53E53" depth="960000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

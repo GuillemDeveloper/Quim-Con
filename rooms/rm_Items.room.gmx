@@ -60,6 +60,7 @@
     <instance objName="obj_orb_nitrogen" x="256" y="256" name="inst_A5127492" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_neon" x="160" y="256" name="inst_2D2B1EE4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_orb_phosphorus" x="448" y="256" name="inst_2BCBA18D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialEscape" x="288" y="384" name="inst_EB9986E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

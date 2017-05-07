@@ -107,6 +107,12 @@
         <sprite>sprites\spr_npc11_right</sprite>
         <sprite>sprites\spr_npc11_up</sprite>
       </sprites>
+      <sprites name="npc12">
+        <sprite>sprites\spr_npc12_down</sprite>
+        <sprite>sprites\spr_npc12_right</sprite>
+        <sprite>sprites\spr_npc12_left</sprite>
+        <sprite>sprites\spr_npc12_up</sprite>
+      </sprites>
     </sprites>
     <sprites name="Collider">
       <sprite>sprites\collider</sprite>
@@ -162,7 +168,9 @@
         <sprite>sprites\spr_tutorial</sprite>
         <sprite>sprites\spr_spacebar</sprite>
         <sprite>sprites\spr_escapeKey</sprite>
+        <sprite>sprites\spr_tutorialEscape</sprite>
         <sprite>sprites\spr_tutorialEnter</sprite>
+        <sprite>sprites\spr_escape</sprite>
       </sprites>
       <sprite>sprites\spr_saving</sprite>
       <sprite>sprites\spr_selectedSaving</sprite>
@@ -193,6 +201,7 @@
     <sprites name="Choices">
       <sprite>sprites\spr_ChoiceBox</sprite>
       <sprite>sprites\spr_DialogueBox</sprite>
+      <sprite>sprites\spr_DialogueBoxBig</sprite>
     </sprites>
     <sprites name="doors">
       <sprite>sprites\spr_door_Town</sprite>
@@ -209,6 +218,13 @@
       <sprite>sprites\spr_column</sprite>
       <sprite>sprites\spr_column_green</sprite>
       <sprite>sprites\spr_Helio_Tree</sprite>
+      <sprite>sprites\spr_column_grey</sprite>
+      <sprite>sprites\spr_wallTown</sprite>
+      <sprite>sprites\spr_green_rock</sprite>
+      <sprite>sprites\spr_pit</sprite>
+      <sprite>sprites\spr_plant1</sprite>
+      <sprite>sprites\spr_harp</sprite>
+      <sprite>sprites\spr_plant2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -248,6 +264,7 @@
       <background>background\wallpaper_intro</background>
       <background>background\bck_portada</background>
       <background>background\bck_intro</background>
+      <background>background\bck_portada_new</background>
     </backgrounds>
     <backgrounds name="System">
       <backgrounds name="Options">
@@ -299,6 +316,7 @@
     </scripts>
     <scripts name="Dialogs &amp; Choices">
       <script>scripts\scrDialogue.gml</script>
+      <script>scripts\scrDialogue_big.gml</script>
       <script>scripts\scrShowChoices.gml</script>
     </scripts>
     <scripts name="System">
@@ -334,18 +352,19 @@
     </objects>
     <objects name="characters">
       <object>objects\obj_hero</object>
-      <object>objects\obj_npc4</object>
+      <object>objects\obj_evil_mage</object>
       <object>objects\obj_npc1_new</object>
+      <object>objects\obj_npc10</object>
+      <object>objects\obj_npc11</object>
       <object>objects\obj_npc2</object>
+      <object>objects\obj_npc3</object>
+      <object>objects\obj_npc4</object>
       <object>objects\obj_npc5</object>
       <object>objects\obj_npc6</object>
       <object>objects\obj_npc7</object>
       <object>objects\obj_npc8</object>
       <object>objects\obj_npc9</object>
-      <object>objects\obj_npc10</object>
-      <object>objects\obj_npc11</object>
-      <object>objects\obj_evil_mage</object>
-      <object>objects\obj_npc3</object>
+      <object>objects\obj_npc12</object>
     </objects>
     <objects name="Collider">
       <object>objects\obj_collider</object>
@@ -419,7 +438,15 @@
         <object>objects\obj_column_green</object>
         <object>objects\obj_column</object>
         <object>objects\obj_tree_helio</object>
+        <object>objects\obj_column_grey</object>
+        <object>objects\obj_green_rock</object>
+        <object>objects\obj_plant1</object>
+        <object>objects\obj_plant2</object>
+        <object>objects\obj_harp</object>
+        <object>objects\obj_waterpit</object>
+        <object>objects\obj_wall_town</object>
       </objects>
+      <object>objects\obj_weather</object>
     </objects>
     <objects name="Inventory">
       <object>objects\obj_inventory</object>
@@ -502,6 +529,7 @@
       <object>objects\obj_tutorialExit</object>
       <object>objects\obj_tutorialTalk</object>
       <object>objects\obj_tutorialEnter</object>
+      <object>objects\obj_tutorialEscape</object>
     </objects>
     <objects name="Save/Load">
       <object>objects\obj_save1</object>

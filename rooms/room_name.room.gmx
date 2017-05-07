@@ -54,6 +54,7 @@
     <instance objName="obj_name" x="288" y="160" name="inst_EB1F9C5D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_enter" x="288" y="256" name="inst_4896572C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_textName" x="64" y="160" name="inst_067BD5AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_tutorialEscape" x="96" y="416" name="inst_F0D9C3FE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

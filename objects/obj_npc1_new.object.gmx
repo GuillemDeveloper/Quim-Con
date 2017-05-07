@@ -88,7 +88,7 @@ last_y=phy_position_y;
           <argument>
             <kind>1</kind>
             <string>///Handle Input Logic
-//En proves
+
 
 if (global.pause) 
 { 
@@ -96,16 +96,17 @@ if (global.pause)
     exit;
 }
 
-/*
 if (place_meeting(x,y,obj_hero)){
 
-    path_end();
+    path_speed = 0;
     phy_position_x += 0;
     phy_position_y += 0;
     image_speed=0;
-} else  if
+} else
 {
-*/
+
+path_speed = 1;
+image_speed = 0.1;
 global.direct= direction;
 switch(direction){  
 case 0:  
@@ -125,22 +126,8 @@ sprite_index = npc1_down;
 break;
 
 } 
-//}
+}
 
-/*
- if (phy_position_x &lt; phy_position_xprevious) {
-    sprite_index = npc1_right;
-}
-if (phy_position_x &gt; phy_position_xprevious) {
-    sprite_index = npc1_left;
-}
-if (phy_position_y &lt; phy_position_yprevious) {
-    sprite_index = npc1_up;
-}
-if (phy_position_y &gt; phy_position_yprevious) {
-    sprite_index = npc1_down;
-}
-*/
 
 
 
