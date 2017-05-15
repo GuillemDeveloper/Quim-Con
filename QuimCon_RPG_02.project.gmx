@@ -293,9 +293,9 @@
     </paths>
   </paths>
   <scripts name="scripts">
-    <script>scripts\dialogue_create_script.gml</script>
-    <script>scripts\dialogue_step.gml</script>
     <scripts name="Old System of items">
+      <script>scripts\dialogue_step.gml</script>
+      <script>scripts\dialogue_create_script.gml</script>
       <script>scripts\scr_itempickup.gml</script>
       <script>scripts\scr_itemdrop.gml</script>
       <script>scripts\scr_itemcheck.gml</script>
@@ -504,6 +504,9 @@
       </objects>
       <object>objects\obj_credits</object>
       <object>objects\obj_end</object>
+      <objects name="proves">
+        <object>objects\obj_locker</object>
+      </objects>
     </objects>
     <objects name="Text objects">
       <object>objects\obj_text</object>
@@ -517,9 +520,8 @@
       <object>objects\obj_ingame_configuration</object>
       <object>objects\object_ingame_menu</object>
       <object>objects\obj_status</object>
+      <object>objects\obj_Introduccio</object>
     </objects>
-    <object>objects\obj_locker</object>
-    <object>objects\obj_Introduccio</object>
     <objects name="tutorial">
       <object>objects\obj_arrows</object>
       <object>objects\obj_spacebar</object>
@@ -530,6 +532,7 @@
       <object>objects\obj_tutorialTalk</object>
       <object>objects\obj_tutorialEnter</object>
       <object>objects\obj_tutorialEscape</object>
+      <object>objects\obj_menu_Escape</object>
     </objects>
     <objects name="Save/Load">
       <object>objects\obj_save1</object>
